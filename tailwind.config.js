@@ -5,7 +5,24 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'main-green': '#088178',
+        'light-teal': 'rgb(56,223,211)',
+        'body-background': 'rgb(231, 238, 240)',
+        'special-element': '#ffffff9d',
+        'header-background': '#fffffff6',
+        'footer-background': '#102334',
+      },
+      boxShadow: {
+        'custom': '0 8px 18px rgba(0, 0, 0, 0.08)',
+      },
+      fontFamily: {
+        'headline': ['Montserrat', 'sans-serif'],
+        'body': ['Poppins', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
+  mode: 'jit',
 }

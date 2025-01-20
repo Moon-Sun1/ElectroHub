@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import {
@@ -140,3 +141,16 @@ const Footer = () => {
 };
 
 export default Footer;
+=======
+import React from 'react'
+
+const Footer = () => {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default Footer
+>>>>>>> 09ef5358a11fe414ba0ec5d0823306ae0f24dd75

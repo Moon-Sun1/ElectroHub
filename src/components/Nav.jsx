@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import logo from'../assets/logo.png';
 import { FaUser,
          FaHeart,
@@ -37,6 +38,18 @@ const Nav = () => {
                 </div>
            </div>
 
+=======
+import { NavLink } from 'react-router-dom'
+const Nav = () => {
+  return (
+    <div>
+      <nav className='flex  justify-center items-center gap-4 font-bold'>
+       <NavLink to="/">Home</NavLink>
+       <NavLink to="/about">About</NavLink>
+       <NavLink to="/products">products</NavLink>
+      </nav>
+    </div>
+>>>>>>> 09ef5358a11fe414ba0ec5d0823306ae0f24dd75
   )
 }
 

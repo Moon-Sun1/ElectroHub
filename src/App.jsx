@@ -11,9 +11,7 @@ function App() {
   return (
     <div className=" h-[100vh] bg-body-background">
     <Nav/>
-     
-    
-    <Footer />
+
     <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/About" element={<About/>}/>

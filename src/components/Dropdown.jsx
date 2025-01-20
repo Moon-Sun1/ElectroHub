@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export function Dropdown() {
     const [isOpen, setIsOpen] = useState(false);
-    const [trigger, setTrigger]= useState("All Categories")
+   
     const menuItems = [
       'All Categories',
       'Smartphones',
@@ -20,12 +20,11 @@ export function Dropdown() {
       <div className="relative inline-block text-left" >
         <button
           onClick={() => setIsOpen(!isOpen)}
-  
-          className="  h-12  inline-flex items-center justify-center w-full px-3 py-1 text-sm font-medium text-gray-700 bg-white border border-gray-300  hover:bg-gray-50 "
+          className="  h-12  inline-flex items-center justify-center w-full px-3 py-1 text-sm font-medium text-gray-700 bg-white  border-r border-gray-300  hover:bg-gray-50 "
           aria-haspopup="true"
           aria-expanded={isOpen}
-        >
-          {trigger}
+          >
+          {menuItems}
           <FaChevronDown
             className={`ml-2 h-4 w-4 transition-transform duration-200 ${
               isOpen ? 'transform rotate-180' : ''
@@ -33,7 +32,7 @@ export function Dropdown() {
           />
         </button>
   
-        {isOpen && (
+        {isOpen && (//show menu if true
           <div 
             className="absolute right-0 w-56 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-10 transform opacity-100 scale-100 transition-all duration-200"
           >
@@ -47,7 +46,7 @@ export function Dropdown() {
                     setTrigger(item)
                     setIsOpen(false);
                   }}
-                  tabIndex={0}
+               
                 >
                   {item}
                 </Link>

@@ -15,7 +15,7 @@ const Nav = () => {
     
    
              
-            <div className=' flex justify-between  items-center mb-1 px-1 py-2 sm:px[1vh] md:px-[3vh] lg:px[13vh] bg-footer-background'>
+            <div className='  fixed top-0 w-full z-10 flex justify-between  items-center mb-1 px-1 py-2 sm:px[1vh] md:px-[3vh] lg:px[13vh] bg-footer-background'>
                 {/* logo */}
                 <Link to={"/"} className='flex'>
                 <img className='h-12 p-1 sm:h-16' src={logo} alt="" />   
@@ -31,9 +31,9 @@ const Nav = () => {
                 
                    {/* icons */}
                 <div className='flex gap-2 sm:gap-3 md:gap-4 '> 
-                    <FaUser          className='  text-gray-300 hover:text-main-green   size-5  md:size-6 lg:size-7 '/>
+                    <FaUser          className=' text-gray-300 hover:text-main-green   size-5  md:size-6 lg:size-7 '/>
                     <FaShoppingCart  className=' text-gray-300 hover:text-main-green  size-5  md:size-6 lg:size-7 '/>
-                    <FaHeart         className=' text-red-500 hover:text-main-green  size-5  md:size-6 lg:size-7 '/>
+                    <FaHeart         className=' text-red-500  hover:text-main-green  size-5  md:size-6 lg:size-7 '/>
                 </div>
            </div>
 
@@ -41,8 +41,3 @@ const Nav = () => {
 }
 
 export default Nav
-{/* <li>Smartphones</li>
-            <li>Laptops</li>
-            <li>Gaming</li>
-            <li>Accessories</li>
-            <li>Camera</li> */}

@@ -1,5 +1,5 @@
 import React from 'react'
-<<<<<<< HEAD
+
 import logo from'../assets/logo.png';
 import { FaUser,
          FaHeart,

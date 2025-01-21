@@ -1,4 +1,3 @@
-
 import Hero from "../components/Hero"
 import Footer from "../components/Footer"
 
@@ -8,7 +7,6 @@ function Home(){
    
         <div className="w-full h-full font-body">
             <Hero />
-            <Footer />
         </div>
         </div>
     )

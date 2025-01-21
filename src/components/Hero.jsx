@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaChevronCircleRight, FaChevronCircleLeft } from "react-icons/fa";
@@ -122,16 +121,3 @@ const Hero = () => {
 };
 
 export default Hero;
-=======
-import React from 'react'
-
-const Hero = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default Hero
->>>>>>> 09ef5358a11fe414ba0ec5d0823306ae0f24dd75

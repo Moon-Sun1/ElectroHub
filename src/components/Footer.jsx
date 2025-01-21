@@ -1,4 +1,3 @@
-
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import {
@@ -46,7 +45,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-full bg-footer-background font-body py-5">
+    <footer className="w-full bg-footer-background font-body py-5 ">
       <div className="w-full flex-col justify-start h-full sm:flex sm:flex-wrap sm:flex-row sm:justify-evenly sm:items-start">
         <div className="flex flex-col items-center space-y-5">
           <h2 className="text-3xl font-bold text-white font-headline">

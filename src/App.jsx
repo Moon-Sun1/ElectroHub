@@ -1,12 +1,25 @@
 
 import Footer from "./components/Footer"
 import "./index.css";
+import Nav from "./components/Nav";
+import Home from "./pages/Home";
+import About from "./pages/About";
+// import Products from "./pages/Products";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline text-blue-950">Hello world!</h1>
-    </>
+    <div className=" h-[100vh] bg-body-background">
+    <Nav/>
+ 
+    <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/About" element={<About/>}/>
+    
+    </Routes>
+    <Footer />
+   </div>
+   
   );
 }
 

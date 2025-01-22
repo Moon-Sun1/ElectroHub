@@ -3,7 +3,7 @@ import Card from "./Card";
 const data = [
   {
     id: 1,
-    name: "Apple_Watch_Ultra_2",
+    name: "Apple Watch Ultra 2",
     price: 500,
     image: "src/assets/Apple_Watch_Ultra_2-removebg-preview.png",
     description: "This is a description of the product",
@@ -14,7 +14,7 @@ const data = [
   },
   {
     id: 2,
-    name: "Apple_Watch_Ultra_2",
+    name: "Apple Watch Ultra 2",
     price: 500,
     image: "src/assets/Xbox_series_x_slide-removebg-preview.png",
     description: "This is a description of the product",
@@ -26,7 +26,7 @@ const data = [
 
   {
     id: 3,
-    name: "Apple_Watch_Ultra_2",
+    name: "Apple Watch Ultra 2",
     price: 500,
     image: "src/assets/samsung_gear_camera-removebg-preview.png",
     description: "This is a description of the product",
@@ -37,7 +37,7 @@ const data = [
   },
   {
     id: 4,
-    name: "Apple_Watch_Ultra_2",
+    name: "Apple Watch Ultra 2",
     price: 500,
     image: "src/assets/Apple_Watch_Ultra_2-removebg-preview.png",
     description: "This is a description of the product",

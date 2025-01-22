@@ -22,7 +22,7 @@ const Card = (props) => {
   }, [props.data.insert_Date]);
 
   return (
-    <div className="flex flex-col w-[275] space-y-2 py-5 px-5 shadow-custom bg-header-background rounded-lg ">
+    <div className="flex flex-col w-[275] space-y-2 py-5 px-5 shadow-custom bg-header-background rounded-lg lg:w-[280px]">
       <div className="flex justify-between">
         {isNew ? (
           <div className="bg-main-green text-body-background w-12 h-6 text-center">

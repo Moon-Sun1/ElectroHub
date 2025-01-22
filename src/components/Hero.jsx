@@ -63,12 +63,12 @@ const Hero = () => {
         </h1>
         <p className="font-normal text-lg 
                       md:text-3xl 
-                      lg:text-start lg:text-2xl">
+                      lg:text-start lg:text-xl">
           Discover the latest gadgets and electronics.
           From smartphones and laptops to gaming consoles and smart home
           devices, we ve got you covered.
         </p>
-        <div className="flex justify-center space-x-4 md:space-x-6">
+        <div className="flex justify-center space-x-4 md:space-x-6 lg:space-x-3">
           <button
             type="button"
             className="bg-main-green py-2 px-4 rounded-md text-white text-xl hover:bg-main-green/80 transition-colors duration-300 
@@ -81,8 +81,8 @@ const Hero = () => {
           <button
             type="button"
             className="py-2 px-4 rounded-md border border-main-green text-main-green text-xl hover:bg-main-green/10 transition-colors duration-300
-             sm:text-3xl sm:py-4 sm:px-5 sm:rounded-xl
-             md:text-2xl"
+             md:text-3xl md:py-4 md:px-5 md:rounded-xl
+             lg:text-xl lg:"
             onClick={() => handleNavigate("/about")}
           >
             About Us

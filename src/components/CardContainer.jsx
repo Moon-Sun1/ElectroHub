@@ -46,11 +46,23 @@ const data = [
     insert_Date: "2025-01-21",
     rate: 4.5,
   },
+  {
+    id: 4,
+    name: "Apple Watch Ultra 2",
+    price: 500,
+    image: "src/assets/Apple_Watch_Ultra_2-removebg-preview.png",
+    description: "This is a description of the product",
+    company: "apple",
+    category: "Electronics",
+    insert_Date: "2025-01-21",
+    rate: 4.5,
+  },
 ];
 
 const CardContainer = () => {
   return (
-    <div className="flex flex-wrap justify-center space-y-5 space-x-8 min-h-full items-end">
+                                               //space-y-5 space-x-8
+    <div className="flex flex-wrap justify-center gap-10 min-h-full  items-end">
       {data.map((product, index) => {
         return <Card data={product} key={index} />;
       })}

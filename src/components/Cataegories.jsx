@@ -14,27 +14,27 @@ const Cataegories = () => {
 
   <div className='flex h-[300px] justify-evenly items-center font-semibold md:px-10'>  {/* //div container Cataegories */}
 <Link  to={"controller"} className='  rounded-lg  p-2 hover:text-main-green hover:opacity-80 '>
-<img className ="w-40 h-24 p-3 bg-white rounded-full sm:h-32 "src={controller} alt="" /> 
+<div className=' bg-white rounded-full'><img className ="w-40 h-24 p-6 sm:h-32 "src={controller} alt="" /></div>
 <p className='text-center mt-4  md:text-xl'>controller</p>
 </Link> 
 
 <Link  to={"controller"} className='  rounded-full p-2 hover:text-main-green hover:opacity-80'>
-<img className ="w-40 h-24 p-6 bg-white rounded-full sm:h-32 "src={laptop} alt="" />
+<div className=' bg-white rounded-full'><img className ="w-40 h-24 p-4 sm:h-32 "src={laptop} alt="" /></div>
 <p className='text-center mt-4 md:text-xl'>Laptop</p>
 </Link>
 
 <Link  to={"controller"} className='  rounded-full p-2 hover:text-main-green hover:opacity-80'>
-<img className ="w-40 h-24 p-6 bg-white rounded-full sm:h-32 "src={mobile} alt="" />
+<div className=' bg-white rounded-full'><img className ="w-40 h-24 p-4 sm:h-32 "src={mobile} alt="" /></div>
 <p className='text-center mt-4 md:text-xl'>mobile</p>
 </Link>
 
 <Link  to={"controller"} className='  rounded-full p-2 hover:text-main-green hover:opacity-80'>
-<img className ="w-40 h-24 p-6 bg-white rounded-full sm:h-32 "src={camera} alt="" />
+<div className=' bg-white rounded-full'><img className ="w-40 h-24 p-4 sm:h-32 "src={camera} alt="" /></div>
 <p className='text-center mt-4 md:text-xl'>camera</p>
 </Link>
 
 <Link  to={"controller"} className='  rounded-full p-2 hover:text-main-green hover:opacity-80'>
-<img className ="w-40 h-24 p-6 bg-white rounded-full sm:h-32 " src={other} alt="" />
+<div className=' bg-white rounded-full'><img className ="w-40 h-24 p-4 sm:h-32 "src={other} alt="" /></div>
 <p className='text-center mt-4 md:text-xl'>other</p>
 </Link>
 </div>

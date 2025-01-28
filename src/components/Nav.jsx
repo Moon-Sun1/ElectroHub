@@ -26,7 +26,7 @@ const [visible,setVisble]=useState(true)//if true return Hub icon else return co
       <div className=" flex m-auto border rounded-md">
        <div className="hidden md:block"><Dropdown/></div> 
        <div className="hidden md:block"><SearchBar/></div> 
-    
+  
       </div>
 
        {/* icons */}
@@ -34,7 +34,7 @@ const [visible,setVisble]=useState(true)//if true return Hub icon else return co
          {/* small nav */}
           <FaBars onClick={()=>setVisble(true)} className="  text-gray-500 text-4xl block md:hidden"/>
 
-          <div className={`absolute top-0 right-0 bottom-0 overflow-hidden transition-all bg-slate-200 ${visible?'w-[60%] h-[100vh]  fixed ' :'w-0'}` }>
+          <div className={`absolute top-0 right-0 bottom-0 overflow-hidden transition-all bg-slate-200 md:hidden ${visible?'w-[60%] h-[100vh]  fixed ' :'w-0'}` }>
            <div className='flex flex-col text-black '>
             <div onClick={()=>{setVisble(false)}} className='flex items-center gap-2 p-3 mt-6 '> 
             <FaTimes className='ml-4 mr-2 font-bold text-gray-500 text-3xl '/>

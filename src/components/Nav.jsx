@@ -6,6 +6,7 @@ import {
   FaBars,
   FaTimes,
 } from "react-icons/fa";
+import { FaSignInAlt, FaSignOutAlt } from "react-icons/fa";
 import SearchBar from "./SearchBar";
 import Dropdown from "../components/Dropdown";
 import { Link, NavLink } from "react-router-dom";
@@ -71,14 +72,14 @@ const Nav = () => {
                         onClick={() => setIsLongin(false)}
                         className=" text-blue-500 hover:text-red-600 rounded-xl"
                       >
-                        Sign out
+                        Sign out <faSignOutAlt className="text-xl" />
                       </button>
                     ) : (
                       <button
                         onClick={() => setIsLongin(true)}
                         className=" text-blue-500 hover:text-main-green rounded-xl"
                       >
-                        Sign in
+                        Sign in <faSignInAlt />
                       </button>
                     )}
                   </div>
@@ -142,13 +143,6 @@ const Nav = () => {
             {/* ---------sm:logo -------- */}
             <div className=" block md:hidden">
               <div className="w-[60vh] h-[100vh] z-40 bg-slate-200 ">
-                {/* <Link to={"/"} className=" flex items-center mr-5 my-2">
-                  <img className="h-9  " src={logo} alt="" />
-                  <h1 className="font-bold text-xl mt-4">
-                    Electro<span className="text-main-green ">Hub</span>
-                  </h1>
-                </Link> */}
-
                 <div className="flex   ">
                   {/* isLogin */}
                   {isLogin ? (
@@ -171,21 +165,6 @@ const Nav = () => {
                     <div className=" mt-16">
                       <h1 className="font-bold    ">Gust</h1>
                       <p className="text-gray-500">You dont have Account </p>
-                      {isLogin ? (
-                        <button
-                          onClick={() => setIsLongin(false)}
-                          className=" text-blue-500 text-xl hover:text-red-600 rounded-xl block "
-                        >
-                          Sign out
-                        </button>
-                      ) : (
-                        <button
-                          onClick={() => setIsLongin(true)}
-                          className=" text-blue-500 text-xl hover:text-main-green rounded-xl block "
-                        >
-                          Sign in
-                        </button>
-                      )}
                     </div>
                   )}
                 </div>
@@ -206,61 +185,63 @@ const Nav = () => {
                   </button>
                 )}
                 <hr className="h-1 w-full bg-gray-400 " />
-                <div className="flex flex-col  gap-3 text-xl my-3 ">
-                  <NavLink
-                    className="border   active:bg-gray-400  hover:bg-gray-400"
-                    onClick={() => setVisble(false)}
-                    to="/card"
-                  >
-                    Cart
-                    <FaShoppingCart className=" cursor-pointer inline text-center ml-2" />
-                  </NavLink>
+                {isLogin && (
+                  <div className="flex flex-col  gap-3 text-xl my-3">
+                    <NavLink
+                      className="border   active:bg-gray-400  hover:bg-gray-400"
+                      onClick={() => setVisble(false)}
+                      to="/card"
+                    >
+                      Cart
+                      <FaShoppingCart className=" cursor-pointer inline text-center ml-2" />
+                    </NavLink>
 
-                  <NavLink
-                    className="border   active:bg-gray-400  hover:bg-gray-400"
-                    onClick={() => setVisble(false)}
-                    to="/Favorites"
-                  >
-                    Favorites
-                    <FaHeart className=" cursor-pointer inline text-center ml-2" />
-                  </NavLink>
+                    <NavLink
+                      className="border   active:bg-gray-400  hover:bg-gray-400"
+                      onClick={() => setVisble(false)}
+                      to="/Favorites"
+                    >
+                      Favorites
+                      <FaHeart className=" cursor-pointer inline text-center ml-2" />
+                    </NavLink>
 
-                  <NavLink
-                    className="border   active:bg-gray-400  hover:bg-gray-400"
-                    onClick={() => setVisble(false)}
-                    to="/Smartphones"
-                  >
-                    Smartphones
-                  </NavLink>
-                  <NavLink
-                    className="border   active:bg-gray-400  hover:bg-gray-400"
-                    onClick={() => setVisble(false)}
-                    to="/Laptops"
-                  >
-                    Laptops
-                  </NavLink>
-                  <NavLink
-                    className="border   active:bg-gray-400  hover:bg-gray-400"
-                    onClick={() => setVisble(false)}
-                    to="/Gaming Center"
-                  >
-                    Gaming Center
-                  </NavLink>
-                  <NavLink
-                    className="border   active:bg-gray-400  hover:bg-gray-400"
-                    onClick={() => setVisble(false)}
-                    to="/Accessories"
-                  >
-                    Accessories
-                  </NavLink>
-                  <NavLink
-                    className="border   active:bg-gray-400  hover:bg-gray-400"
-                    onClick={() => setVisble(false)}
-                    to="/Camera"
-                  >
-                    Camera
-                  </NavLink>
-                </div>
+                    <NavLink
+                      className="border   active:bg-gray-400  hover:bg-gray-400"
+                      onClick={() => setVisble(false)}
+                      to="/Smartphones"
+                    >
+                      Smartphones
+                    </NavLink>
+                    <NavLink
+                      className="border   active:bg-gray-400  hover:bg-gray-400"
+                      onClick={() => setVisble(false)}
+                      to="/Laptops"
+                    >
+                      Laptops
+                    </NavLink>
+                    <NavLink
+                      className="border   active:bg-gray-400  hover:bg-gray-400"
+                      onClick={() => setVisble(false)}
+                      to="/Gaming Center"
+                    >
+                      Gaming Center
+                    </NavLink>
+                    <NavLink
+                      className="border   active:bg-gray-400  hover:bg-gray-400"
+                      onClick={() => setVisble(false)}
+                      to="/Accessories"
+                    >
+                      Accessories
+                    </NavLink>
+                    <NavLink
+                      className="border   active:bg-gray-400  hover:bg-gray-400"
+                      onClick={() => setVisble(false)}
+                      to="/Camera"
+                    >
+                      Camera
+                    </NavLink>
+                  </div>
+                )}
               </div>
             </div>
           </div>

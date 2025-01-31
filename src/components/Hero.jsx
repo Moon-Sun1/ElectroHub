@@ -1,6 +1,5 @@
-
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
 import { FaChevronCircleRight, FaChevronCircleLeft } from "react-icons/fa";
 
 const Hero = () => {
@@ -26,6 +25,21 @@ const Hero = () => {
       src: "src/assets/Xbox_series_x_slide-removebg-preview.png", // Path to image
       alt: "Xbox Series X", // Descriptive alt text for accessibility
       title: "Xbox Series X", // Title of the image
+      src: "src/assets/Apple_Watch_Ultra_2-removebg-preview.png",
+      alt: "Apple Watch Ultra 2",
+      title: "Apple Watch Ultra 2",
+    },
+    {
+      id: 1,
+      src: "src/assets//samsung_gear_camera-removebg-preview.png",
+      alt: "Samsung Gear Camera",
+      title: "Samsung Gear Camera",
+    },
+    {
+      id: 2,
+      src: "src/assets//Xbox_series_x_slide-removebg-preview.png",
+      alt: "Xbox Series X",
+      title: "Xbox Series X",
     },
   ];
 
@@ -36,7 +50,9 @@ const Hero = () => {
 
   // Function to handle the previous slide
   function handlePrevSlide() {
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + images.length) % images.length); // Decrement current slide index, wrapping around with modulo operator
+    setCurrentSlide(
+      (prevSlide) => (prevSlide - 1 + images.length) % images.length
+    ); // Decrement current slide index, wrapping around with modulo operator
   }
 
   // useEffect hook to automatically advance slides every 3 seconds
@@ -45,7 +61,7 @@ const Hero = () => {
       handleNextSlide();
     }, 3000); // Slide transition interval set to 3 seconds
     return () => clearInterval(intervalId); // Cleanup interval on component unmount
-  }, []); 
+  }, []);
 
   // Hook to navigate to different routes
   const navigateTo = useNavigate();
@@ -55,30 +71,41 @@ const Hero = () => {
 
   // JSX structure of the Hero component
   return (
-    <div className="overflow-auto my-10 w-full flex flex-col py-5 px-3 items-center font-body space-y-10 text-center
+    <div
+      className="overflow-auto my-10 w-full flex flex-col py-5 px-3 items-center font-body space-y-10 text-center
                     md:px-4
-                    lg:flex-row lg:justify-between lg:items-end lg:h-[60vh] lg:px-12">
-      <div className="flex flex-col space-y-4 
-                      lg:items-start lg:w-[50%] lg:justify-center lg:space-y-10 lg:h-full">
-        <h1 className="text-3xl font-headline font-bold mx-0 px-0
-                       md:text-[50px]
-                       lg:text-[50px]
-                       lg:text-start">
+                    lg:flex-row lg:justify-between lg:items-end lg:h-[60vh] lg:px-12"
+    >
+      <div
+        className="flex flex-col space-y-4 
+                    md:space-y-5
+                      lg:items-start lg:w-[50%] lg:justify-center lg:space-y-10 lg:h-full"
+      >
+        <h1
+          className="text-3xl font-headline font-bold mx-0 px-0
+                       md:text-[50px] 
+                       lg:text-[35px] lg:text-start
+                       xl:text-[44px]"
+        >
           Your <span className="text-main-green">Electronics</span> Haven
         </h1>
-        <p className="font-normal text-lg 
+        <p
+          className="font-normal text-lg 
                       md:text-3xl 
-                      lg:text-start lg:text-xl">
-          Discover the latest gadgets and electronics.
-          From smartphones and laptops to gaming consoles and smart home
-          devices, we've got you covered.
+                      lg:text-start lg:text-xl
+                      xl:text-xl"
+        >
+          Discover the latest gadgets and electronics. From smartphones and
+          laptops to gaming consoles and smart home devices, we ve got you
+          covered.
         </p>
         <div className="flex justify-center space-x-4 md:space-x-6 lg:space-x-3">
           <button
             type="button"
-            className="bg-main-green py-2 px-4 rounded-md text-white text-xl hover:bg-main-green/80 transition-colors duration-300 
-            sm:text-3xl sm:py-4 sm:px-5 sm:rounded-xl
-            md:text-2xl"
+            className="bg-main-green py-2 px-4 rounded-md text-white text-lg hover:bg-main-green/80 transition-colors duration-300 
+            md:py-4 md:px-5 md:rounded-xl md:text-2xl
+            lg:text-xl
+            xl:text-2xl"
             onClick={() => handleNavigate("/contact")}
           >
             Contact Us
@@ -86,8 +113,9 @@ const Hero = () => {
           <button
             type="button"
             className="py-2 px-4 rounded-md border border-main-green text-main-green text-xl hover:bg-main-green/10 transition-colors duration-300
-             md:text-3xl md:py-4 md:px-5 md:rounded-xl
-             lg:text-xl"
+             md:text-2xl md:py-4 md:px-5 md:rounded-xl
+             lg:text-xl
+             xl:text-2xl"
             onClick={() => handleNavigate("/about")}
           >
             About Us
@@ -95,8 +123,10 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative w-full h-64 overflow-hidden rounded-2xl 
-                      lg:w-[45%] lg:h-full">
+      <div
+        className="relative w-full h-64 overflow-hidden rounded-2xl 
+                      lg:w-[45%] lg:h-full"
+      >
         {images.map((image, index) => (
           <div
             key={image.id}

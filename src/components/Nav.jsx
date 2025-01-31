@@ -1,5 +1,5 @@
 import logo from "../assets/logo.png";
-import { FaUser, FaHeart, FaShoppingCart } from "react-icons/fa";
+import { FaHeart, FaShoppingCart } from "react-icons/fa";
 import SearchBar from "./SearchBar";
 import Dropdown from "../components/Dropdown";
 import NavIcons from "../components/NavIcons";
@@ -7,7 +7,8 @@ import { Link ,NavLink } from "react-router-dom";
 import { useState } from "react";
 import { FaBars, FaTimes } from 'react-icons/fa';
 const Nav = () => {
-const [visible,setVisble]=useState(true)//if true return Hub icon else return colse icone
+const [visible,setVisble]=useState(true)
+
 
   return (
   <div className="  font-headline sticky top-0 w-full z-50

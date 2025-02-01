@@ -12,7 +12,6 @@ import Dropdown from "../components/Dropdown";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import profileImg from "../assets/gohgst.webp";
-
 const Nav = () => {
   const [visible, setVisble] = useState(false); //if true return Hubrger  icon else return colse{X icon} icone
   const [isOpenMenuHover, setIsOpenMenuHover] = useState(false); //menu hover for User Info

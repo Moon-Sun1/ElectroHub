@@ -14,9 +14,8 @@ import { useState } from "react";
 import profileImg from "../assets/gohgst.webp";
 
 const Nav = () => {
-  const [visible, setVisble] = useState(false); //if true return Hub icon else return colse icone
+  const [visible, setVisble] = useState(false); //if true return Hubrger  icon else return colse{X icon} icone
   const [isOpenMenuHover, setIsOpenMenuHover] = useState(false); //menu hover for User Info
-  const [isOpenMenuOnclick, setIsOpenMenuOnclick] = useState(false); //User Info small screans
   const [userName, setUserName] = useState("Goghst");
   const [email, setEmail] = useState("Goghst@gmail.co");
   const [isLogin, setIsLongin] = useState(true);

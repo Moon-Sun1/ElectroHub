@@ -10,8 +10,11 @@ function Home() {
   return (
     <div className=" w-full h-full  font-body flex flex-col space-y-10 bg-body-background">
       <Nav />
-      <main className=" px-2 space-y-10
-                        xl:px-16 xl:space-y-20">
+      {/*layout*/}
+      <main
+        className=" px-2 space-y-10
+                        xl:px-16 xl:space-y-20"
+      >
         <Hero />
         <Cataegories />
         <TrendProducts />

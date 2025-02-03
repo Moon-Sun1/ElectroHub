@@ -1,5 +1,4 @@
 import SmallTpCard from "./SmallTpCard";
-import MediumTpCard from "./MediumTpCard";
 import LargeTpCard from "./LargeTpCard";
 
 const TrendProducts = () => {

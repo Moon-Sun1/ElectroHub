@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import laptop from "../assets/Categories/laptop.png";
 import mobile from "../assets/Categories/mobile.png";
@@ -6,64 +5,52 @@ import other from "../assets/Categories/other.png";
 import camera from "../assets/Categories/camera.png";
 import controller from "../assets/Categories/controller.png";
 
-const Cataegories = () => {
+const Categories = () => {
+  const categories = [
+    { name: "Laptop", image: laptop, path: "laptop" },
+    { name: "Mobile", image: mobile, path: "mobile" },
+    { name: "Camera", image: camera, path: "camera" },
+    { name: "Controller", image: controller, path: "controller" },
+    { name: "Other", image: other, path: "other" },
+  ];
+
   return (
-    <div>
-      <h1 className="text-center text-3xl font-serif font-bold m-1 block  ">
-        Cataegories
+    <div className="font-headline px-3 space-y-5
+                    md:space-y-7">
+      <h1 className="text-center text-3xl font-serif font-bold m-1 block w-full
+                     md:text-4xl">
+        Categories
       </h1>
 
-      <div className="flex h-[300px] justify-evenly items-center font-semibold md:px-10">
-        {" "}
-        {/* //div container Cataegories */}
-        <Link
-          to={"controller"}
-          className="  rounded-lg  p-2 hover:text-main-green hover:opacity-80 "
-        >
-          <div className=" bg-white rounded-full">
-            <img className="w-40 h-24 p-6 sm:h-32 " src={controller} alt="" />
-          </div>
-          <p className="text-center mt-4  md:text-xl">controller</p>
-        </Link>
-        <Link
-          to={"controller"}
-          className="  rounded-full p-2 hover:text-main-green hover:opacity-80"
-        >
-          <div className=" bg-white rounded-full">
-            <img className="w-40 h-24 p-4 sm:h-32 " src={laptop} alt="" />
-          </div>
-          <p className="text-center mt-4 md:text-xl">Laptop</p>
-        </Link>
-        <Link
-          to={"controller"}
-          className="  rounded-full p-2 hover:text-main-green hover:opacity-80"
-        >
-          <div className=" bg-white rounded-full">
-            <img className="w-40 h-24 p-4 sm:h-32 " src={mobile} alt="" />
-          </div>
-          <p className="text-center mt-4 md:text-xl">mobile</p>
-        </Link>
-        <Link
-          to={"controller"}
-          className="  rounded-full p-2 hover:text-main-green hover:opacity-80"
-        >
-          <div className=" bg-white rounded-full">
-            <img className="w-40 h-24 p-4 sm:h-32 " src={camera} alt="" />
-          </div>
-          <p className="text-center mt-4 md:text-xl">camera</p>
-        </Link>
-        <Link
-          to={"controller"}
-          className="  rounded-full p-2 hover:text-main-green hover:opacity-80"
-        >
-          <div className=" bg-white rounded-full">
-            <img className="w-40 h-24 p-4 sm:h-32 " src={other} alt="" />
-          </div>
-          <p className="text-center mt-4 md:text-xl">other</p>
-        </Link>
+      <div className="flex flex-wrap justify-center space-x-3 items-end font-semibold w-full space-y-2
+                      md:justify-evenly">
+        {categories.map((category, index) => (
+          <Link
+            key={index}
+            to={category.path}
+            className="rounded-lg hover:text-main-green hover:opacity-80 w-[30%] flex flex-col items-center
+            md:w-1/4
+            lg:w-1/6"
+          >
+            <div className="bg-white rounded-full w-full flex items-center justify-center py-3 px-3 h-24 shadow-custom
+            md:h-32 md:w-[70%]
+            lg:h-32 lg:w-[80%]">
+              <img
+                className="object-cover w-[90%] 
+                          md:w-[70%]
+                          lg:w-3/5"
+                src={category.image}
+                alt={category.name}
+              />
+            </div>
+            <p className="text-center mt-4 
+                          md:text-xl">
+                            {category.name}</p>
+          </Link>
+        ))}
       </div>
     </div>
   );
 };
 
-export default Cataegories;
+export default Categories;

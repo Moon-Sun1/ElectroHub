@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { FaSignInAlt, FaSignOutAlt } from "react-icons/fa";
 import SearchBar from "./SearchBar";
-import Dropdown from "../components/Dropdown";
+import Dropdown from "./Dropdown";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import profileImg from "../assets/gohgst.webp";
@@ -187,7 +187,7 @@ const Nav = () => {
                 {isLogin && (
                   <div className="flex flex-col  gap-3 text-xl my-3">
                     <NavLink
-                      className="border   active:bg-gray-400  hover:bg-gray-400"
+                      className="border   active:bg-gray-400  hover:bg-gray-300 rounded-xl"
                       onClick={() => setVisble(false)}
                       to="/card"
                     >
@@ -196,7 +196,7 @@ const Nav = () => {
                     </NavLink>
 
                     <NavLink
-                      className="border   active:bg-gray-400  hover:bg-gray-400"
+                      className="border   active:bg-gray-400  hover:bg-gray-300 rounded-xl"
                       onClick={() => setVisble(false)}
                       to="/Favorites"
                     >
@@ -205,35 +205,35 @@ const Nav = () => {
                     </NavLink>
 
                     <NavLink
-                      className="border   active:bg-gray-400  hover:bg-gray-400"
+                      className="border   active:bg-gray-400  hover:bg-gray-300 rounded-xl"
                       onClick={() => setVisble(false)}
                       to="/Smartphones"
                     >
                       Smartphones
                     </NavLink>
                     <NavLink
-                      className="border   active:bg-gray-400  hover:bg-gray-400"
+                      className="border   active:bg-gray-400  hover:bg-gray-300 rounded-xl"
                       onClick={() => setVisble(false)}
                       to="/Laptops"
                     >
                       Laptops
                     </NavLink>
                     <NavLink
-                      className="border   active:bg-gray-400  hover:bg-gray-400"
+                      className="border   active:bg-gray-400  hover:bg-gray-300 rounded-xl"
                       onClick={() => setVisble(false)}
                       to="/Gaming Center"
                     >
                       Gaming Center
                     </NavLink>
                     <NavLink
-                      className="border   active:bg-gray-400  hover:bg-gray-400"
+                      className="border   active:bg-gray-400  hover:bg-gray-300 rounded-xl"
                       onClick={() => setVisble(false)}
                       to="/Accessories"
                     >
                       Accessories
                     </NavLink>
                     <NavLink
-                      className="border   active:bg-gray-400  hover:bg-gray-400"
+                      className="border   active:bg-gray-400  hover:bg-gray-300 rounded-xl"
                       onClick={() => setVisble(false)}
                       to="/Camera"
                     >

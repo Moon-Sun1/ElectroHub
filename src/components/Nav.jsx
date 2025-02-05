@@ -44,7 +44,7 @@ const [visible,setVisble]=useState(true)
                   <div className='flex flex-col ml-9 gap-2 '>            
              <NavLink className='border   active:bg-gray-400  hover:bg-gray-400'onClick={()=>setVisble(false)}to="/Smartphones">Smartphones</NavLink>
              <NavLink className='border   active:bg-gray-400  hover:bg-gray-400'onClick={()=>setVisble(false)}to="/Laptops">Laptops</NavLink>
-             <NavLink className='border   active:bg-gray-400  hover:bg-gray-400'onClick={()=>setVisble(false)}to="/Gaming Center">Gaming Center</NavLink>
+             <NavLink className='border   active:bg-gray-400  hover:bg-gray-400'onClick={()=>setVisble(false)}to="/Gaming">Gaming</NavLink>
              <NavLink className='border   active:bg-gray-400  hover:bg-gray-400'onClick={()=>setVisble(false)}to="/Accessories">Accessories</NavLink>
              <NavLink className='border   active:bg-gray-400  hover:bg-gray-400'onClick={()=>setVisble(false)}to="/Camera">Camera</NavLink>
                  </div>

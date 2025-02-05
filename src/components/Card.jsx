@@ -28,17 +28,17 @@ const Card = ({data}) => {
       <div className="flex justify-between">
         {isNew ? (
           <div className="bg-main-green text-body-background w-12 h-6 text-center
-                          xl:text-2xl xl:h-8 xl:w-16">
+                          xl:text-sm xl:h-5 xl:w-12">
             New
           </div>
         ) : (
           <div className="text-slate-400 font-bold text-xl
-                          xl:text-2xl">
+                          xl:text-xl">
             {data.rate}
           </div>
         )}
         <FaHeart className="text-slate-400 text-xl hover:text-red-400 cursor-pointer
-                           xl:text-2xl" />
+                           xl:text-xl" />
       </div>
       <div className=" w-full h-24 bg-card-main rounded-xl flex justify-center items-center
                         md:h-32

@@ -49,15 +49,19 @@ const Nav = () => {
         {/* icons lg*/}
         <div className="hidden md:block">
           <div className=" flex md:flex gap-2 sm:gap-3 md:gap-4 bottom-0">
-            <div onMouseEnter={() => setIsOpenMenuHover(true)} to={"#"}>
+            <div
+              className="h-10 w-6  "
+              onMouseEnter={() => setIsOpenMenuHover(true)}
+              onMouseLeave={() => setIsOpenMenuHover(false)}
+            >
               {" "}
               <FaUser className=" hover:text-main-green relative  size-5  md:size-6 lg:size-5 cursor-pointer" />
-              {/*  user info for lg:screans pop-menu*/}
+              {/*  user info  pop-menu*/}
               {isOpenMenuHover && (
                 <div
                   onMouseEnter={() => setIsOpenMenuHover(true)}
                   onMouseLeave={() => setIsOpenMenuHover(false)}
-                  className=" font-headline font-bold right-10 top-20 rounded-2xl shadow-xl shadow-black absolute z-10 w-80 h-60  bg-white  p-7 hidden md:block"
+                  className=" font-headline font-bold right-24 top-10 rounded-2xl shadow-xl shadow-black absolute z-10 w-80 h-60  bg-white  p-7 hidden md:block"
                 >
                   <div className="flex  ">
                     <Link to={"/"} className=" flex items-center mr-5 ">

@@ -35,3 +35,5 @@ package-lock.json
 # Ignore IDE-specific files
 .vscode/
 .idea/
+# VSCodeCounter
+.VSCodeCounter/

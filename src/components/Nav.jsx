@@ -71,14 +71,14 @@ const Nav = () => {
                         onClick={() => setIsLongin(false)}
                         className=" text-blue-500 hover:text-red-600 rounded-xl"
                       >
-                        Sign out <faSignOutAlt className="text-xl" />
+                        Sign out
                       </button>
                     ) : (
                       <button
                         onClick={() => setIsLongin(true)}
                         className=" text-blue-500 hover:text-main-green rounded-xl"
                       >
-                        Sign in <faSignInAlt />
+                        Sign in
                       </button>
                     )}
                   </div>
@@ -118,7 +118,7 @@ const Nav = () => {
           </div>
         </div>
 
-        {/* small nav */}
+        {/* --------------------------small nav ---------------------------------------------*/}
         <FaBars
           onClick={() => setVisble(true)}
           className="  text-gray-500 text-4xl block md:hidden"
@@ -131,7 +131,6 @@ const Nav = () => {
         >
           {/* user info for small screans */}
 
-          {/* ------------------------------------------------------------- */}
           <div className="flex flex-col gap-3 m-10">
             <FaTimes
               onClick={() => {
@@ -139,11 +138,9 @@ const Nav = () => {
               }}
               className="font-bold mb-4 text-gray-500 text-4xl block "
             />
-            {/* ---------sm:logo -------- */}
             <div className=" block md:hidden">
               <div className="w-[60vh] h-[100vh] z-40 bg-slate-200 ">
                 <div className="flex   ">
-                  {/* isLogin */}
                   {isLogin ? (
                     <div className="flex  mt-5 flex-col  ">
                       <img

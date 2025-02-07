@@ -18,6 +18,7 @@ export function Dropdown() {
     <div className="relative inline-block text-left">
       <button
         onMouseEnter={() => setIsOpen(true)}
+        onMouseLeave={() => setIsOpen(false)}
         className="h-12 inline-flex items-center justify-center w-full px-3 py-1 text-sm font-medium text-gray-700 bg-white border-r border-gray-300 hover:bg-gray-50"
       >
         {selected}
@@ -30,8 +31,9 @@ export function Dropdown() {
 
       {isOpen && (
         <div
-          className="absolute right-0 w-56 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-10"
+          className="absolute right-0  top-10 w-56 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-10"
           onMouseLeave={() => setIsOpen(false)}
+          onMouseEnter={() => setIsOpen(true)}
         >
           <div className="py-1">
             {menuItems.map((item, index) =>

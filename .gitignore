@@ -32,3 +32,8 @@ package-lock.json
 # Tailwind CSS 
 .next/ 
 .cache/ 
+# Ignore IDE-specific files
+.vscode/
+.idea/
+# VSCodeCounter
+.VSCodeCounter/

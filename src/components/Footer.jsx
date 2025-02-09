@@ -31,7 +31,7 @@ const Footer = () => {
   ];
 
   const aboutLinks = [
-    { href: "about.php", text: "About Us" },
+    { href: "about", text: "About Us" },
     { href: "#", text: "Privacy Policy" },
     { href: "#", text: "Terms & Conditions" },
     { href: "contact.php", text: "Contact Us" },
@@ -93,7 +93,7 @@ const Footer = () => {
             {aboutLinks.map((link, index) => (
               <li key={index}>
                 <Link
-                  to={link.href}
+                  to={`${link.href}`}
                   className="hover:text-main-green"
                   aria-label={link.text}
                 >
@@ -138,5 +138,5 @@ const Footer = () => {
     </footer>
   );
 };
-     
+
 export default Footer;

@@ -50,7 +50,7 @@ const Nav = () => {
         <div className="hidden md:block">
           <div className=" flex md:flex gap-2 sm:gap-3 md:gap-4 bottom-0">
             <div
-              className="h-10 w-6  "
+              className=" "
               onMouseEnter={() => setIsOpenMenuHover(true)}
               onMouseLeave={() => setIsOpenMenuHover(false)}
             >
@@ -61,7 +61,7 @@ const Nav = () => {
                 <div
                   onMouseEnter={() => setIsOpenMenuHover(true)}
                   onMouseLeave={() => setIsOpenMenuHover(false)}
-                  className=" font-headline font-bold right-24 top-10 rounded-2xl shadow-xl shadow-black absolute z-10 w-80 h-60  bg-white  p-7 hidden md:block"
+                  className=" font-headline font-bold right-24 top-11 rounded-2xl shadow-xl shadow-black absolute z-10 w-80 h-60  bg-white  p-7 hidden md:block"
                 >
                   <div className="flex  ">
                     <Link to={"/"} className=" flex items-center mr-5 ">

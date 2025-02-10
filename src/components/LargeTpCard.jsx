@@ -22,7 +22,7 @@ const LargeTpCard = () => {
           powerful smart speaker adapts to its surroundings, delivering rich
           bass and crystal-clear highs. 
         </p>
-        <button className="flex items-center space-x-1 bg-body-background px-2 rounded-md 
+        <button className="flex items-center space-x-1 bg-body-background px-2 rounded-md hover:bg-main-green duration-300 hover:text-body-background
                            md:py-1
                            xl:text-xl xl:p-2">
           <span>Shop Now</span> <FaArrowRight />

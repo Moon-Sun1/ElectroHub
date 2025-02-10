@@ -10,7 +10,7 @@ const MediumTpCard = () => {
             <h3 className="text-body-background
                            lg:text-xl lg:font-bold
                            xl:text-3xl">Apple Watch Ultra</h3>
-            <button className="flex space-x-1 text-special-element items-center
+            <button className="flex space-x-1 text-special-element items-center  hover:text-body-background duration-300
                                xl:text-xl">
                 <span>Shop Now</span> <FaArrowRight />
             </button>

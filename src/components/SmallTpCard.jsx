@@ -18,7 +18,7 @@ function SmallTpCard (props) {
                            xl:text-2xl">
                 Samsung Gear Camera
             </h3>
-            <button className="flex gap-2 text-special-element text-sm
+            <button className="flex gap-2 text-special-element text-sm hover:text-body-background duration-300
                                xl:text-xl xl:items-center">
                 <span>Shop Now</span> <FaArrowRight />
             </button>

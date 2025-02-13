@@ -1,5 +1,3 @@
-import React from "react";
-
 const NewsLetterjsx = () => {
   return (
     <div
@@ -34,7 +32,7 @@ const NewsLetterjsx = () => {
           placeholder="Yout E-mail Adderss..."
         />
         <button
-          className="text-white rounded-lg bg-main-green py-2
+          className="text-white rounded-lg bg-main-green  hover:bg-green-500 py-2 
                               lg:px-4 lg:py-4"
         >
           Sign Up

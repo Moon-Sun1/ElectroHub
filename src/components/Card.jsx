@@ -1,9 +1,15 @@
 import { useEffect, useState } from "react";
 import { FaHeart } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 const Card = ({data}) => {
-  //temp Data
+  
+  const navigate = useNavigate()
+
+  function handleClick(){
+    navigate(`/ProductPreview/${data.id}`)
+  }
 
   const trapezoidStyle = {
     WebkitClipPath: "polygon(20% 0, 100% 0, 100% 100%, 0 100%)",
@@ -43,7 +49,9 @@ const Card = ({data}) => {
       <div className=" w-full h-24 bg-card-main rounded-xl flex justify-center items-center
                         md:h-32
                         lg:h-36
-                        xl:h-48">   
+                        xl:h-48"
+                        onClick={handleClick}
+                        >   
         <img
           src={data.image}
           alt={data.description}

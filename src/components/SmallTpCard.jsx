@@ -1,13 +1,22 @@
 import { FaArrowRight } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 
 function SmallTpCard (props) {
+
+  const navigate = useNavigate();
+
+  function handleClick(){
+    navigate(`/ProductPreview/${props.id}`)
+  }
+
 
   return (
     <div className={`flex flex-col items-center rounded-md px-2 py-2 ${props.bgColor} space-y-1 h-[200px] 
                      md:flex-row md:h-[100%] md:justify-evenly
                      
-                     `}>
+                     `}
+                     >
         <div className="flex flex-col space-y-1 h-[53%] w-full 
                         md:h-full md:w-[50%]
                         lg:w-[50%] lg:h-[100%] lg:space-y-0 lg:justify-center
@@ -19,7 +28,8 @@ function SmallTpCard (props) {
                 Samsung Gear Camera
             </h3>
             <button className="flex gap-2 text-special-element text-sm hover:text-body-background duration-300
-                               xl:text-xl xl:items-center">
+                               xl:text-xl xl:items-center"
+                               >
                 <span>Shop Now</span> <FaArrowRight />
             </button>
         </div>

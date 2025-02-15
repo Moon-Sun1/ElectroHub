@@ -38,7 +38,7 @@ const Footer = () => {
   ];
 
   const accountLinks = [
-    { href: "register.php", text: "Sign In" },
+    { href: "/register", text: "Sign In" },
     { href: "cartShoping.php", text: "View Cart" },
     { href: "#", text: "Track My Order" },
     { href: "#", text: "Help" },

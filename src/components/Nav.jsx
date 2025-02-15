@@ -41,7 +41,7 @@ const UserInfo = ({ isLogin, setIsLogin }) => {
       <FaRegUser className="hover:text-main-green relative size-5 md:size-6 lg:size-5 cursor-pointer" />
       {isOpenMenuHover && (
         <div
-          className="font-headline font-bold right-24 top-10 rounded-2xl shadow-xl shadow-black absolute z-10 w-80 h-60 bg-white p-7 hidden md:block"
+          className="font-headline transition-opacity duration-700 ease-in-out font-bold right-24 top-10 rounded-2xl shadow-xl shadow-black absolute z-10 w-80 h-60 bg-white p-7 hidden md:block"
           onMouseEnter={() => setIsOpenMenuHover(true)}
           onMouseLeave={() => setIsOpenMenuHover(false)}
         >

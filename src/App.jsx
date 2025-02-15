@@ -5,6 +5,7 @@ import About from "./pages/About";
 import ProductPreView from "./pages/ProductPreView";
 import SearchPage from "./pages/SearchPage";
 import Contact from "./pages/Contact";
+import Register from "./pages/Register";
 
 // import Products from "./pages/Products";
 function App() {
@@ -15,7 +16,8 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/Contact" element={<Contact />} />
       <Route path="/ProductPreView/:productId" element={<ProductPreView />} />
-      <Route path="/search/:s" element={<SearchPage />}></Route>
+      <Route path="/search/:s" element={<SearchPage />} />
+      <Route path="/Register" element={<Register />} />
     </Routes>
   );
 }

@@ -19,6 +19,7 @@ export default {
         'orange-brown': 'linear-gradient(137deg, rgba(216, 119, 50, 1) 0%, rgba(117, 63, 23, 1) 100%)',
         'green-blue': 'linear-gradient(137deg, rgba(34, 169, 17, 1) 0%, rgba(20, 97, 124, 1) 100%)',
         'dark-gray-light-gray': 'linear-gradient(137deg, rgba(6, 6, 6, 1) 0%, rgba(95, 95, 95, 1) 100%)',
+        'register-bg': "url('src/assets/RegisterImg2.jpg')",
       },
       boxShadow: {
         custom: "0 8px 18px rgba(0, 0, 0, 0.08)",

@@ -4,8 +4,10 @@ import Footer from "../components/Footer";
 import NewsLetterjsx from "../components/NewsLetter";
 import Banner from "../components/Banner";
 import banner from "../assets/about/banner.png";
-import profileImg from "../assets/gohgst.webp";
 import { useForm } from "react-hook-form";
+import Muntazir from "../assets/about/mangers/Muntazir.jpg";
+import Mohammed from "../assets/about/mangers/Mohammed_Profie.jpg";
+import Muslim from "../assets/about/mangers/Muslim_profile.jpg";
 
 import {
   FaMapMarkerAlt,
@@ -38,19 +40,19 @@ const Contact = () => {
       name: "Muntazir Mohammed",
       phone: " (+964) 774 493 3034",
       email: "Muntazir923@gmail.co",
-      profileImage: profileImg,
+      profileImage: Muntazir,
     },
     {
       name: "Mohammed Daher",
       phone: " (+964) 773 790 3820",
       email: "Mohammed934@gmail.",
-      profileImage: profileImg,
+      profileImage: Mohammed,
     },
     {
       name: "MuslimAbd Al-Ali",
       phone: "(+964) 782 141 0095",
       email: " Musliam24@gmail.co",
-      profileImage: profileImg,
+      profileImage: Muslim,
     },
   ];
   return (
@@ -94,7 +96,7 @@ const Contact = () => {
             </div>
           </div>
           <iframe
-            className=" w-[580px] md:w-[750px] h-[500px] px-4 sm:px-5 md:px-7 lg:px-9 "
+            className=" w-full lg:w-[39%]  md:w-[60%]  h-[300px] md:h-[500px] px-4 sm:px-5 md:px-7 lg:px-9 "
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1954.8302198268661!2d47.833983896313406!3d30.499261855866237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2siq!4v1728323748106!5m2!1sar!2siq"
             style={{ border: 0 }}
             allowFullScreen={true}
@@ -115,6 +117,7 @@ const Contact = () => {
             We Love to hear from you
           </h1>
         </div>
+        {/* main container of form and mangers secation  */}
         <div
           className="flex justify-between px-4 sm:px-5 md:px-7 lg:px-9              
             flex-col 
@@ -123,7 +126,7 @@ const Contact = () => {
         >
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="w-full lg:w-[60%] border-2 rounded-lg"
+            className="w-full lg:w-[55%] border-2 rounded-lg"
           >
             <input
               className="w-full h-16 outline-none  border-2 rounded-lg border-gray-500  p-4 my-4n text-xl my-3"
@@ -201,11 +204,11 @@ const Contact = () => {
 
           {/* ------------------ Marketing Manager display data ---------------------------------- */}
 
-          <div className="flex flex-col gap-10 justify-start h-full w-full   md:w-[35%] my-5">
+          <div className="flex flex-col gap-10 justify-start h-full  lg:w-[37%]   my-5">
             {MarketingManager.map((Manager, key) => (
               <div className="flex   items-center  gap-6 w-full " key={key}>
                 <img
-                  className="w-32 h-32 rounded-full inline"
+                  className="w-24 lg:w-32 rounded-full inline"
                   src={Manager.profileImage}
                   alt=""
                 />

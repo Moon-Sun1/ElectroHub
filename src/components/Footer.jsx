@@ -31,14 +31,14 @@ const Footer = () => {
   ];
 
   const aboutLinks = [
-    { href: "about.php", text: "About Us" },
+    { href: "about", text: "About Us" },
     { href: "#", text: "Privacy Policy" },
     { href: "#", text: "Terms & Conditions" },
-    { href: "contact.php", text: "Contact Us" },
+    { href: "contact", text: "Contact Us" },
   ];
 
   const accountLinks = [
-    { href: "register.php", text: "Sign In" },
+    { href: "/register", text: "Sign In" },
     { href: "cartShoping.php", text: "View Cart" },
     { href: "#", text: "Track My Order" },
     { href: "#", text: "Help" },

@@ -7,12 +7,13 @@ import controller from "../assets/Categories/controller.png";
 
 const Categories = () => {
   const categories = [
-    { name: "Laptop", image: laptop, path: "laptop" },
-    { name: "Mobile", image: mobile, path: "mobile" },
+    { name: "Laptop", image: laptop, path: "laptops" },
+    { name: "Mobile", image: mobile, path: "smartphones" },
     { name: "Camera", image: camera, path: "camera" },
-    { name: "Controller", image: controller, path: "controller" },
-    { name: "Other", image: other, path: "other" },
+    { name: "Gaming", image: controller, path: "Gaming" },
+    { name: "Other", image: other, path: "Accessories" },
   ];
+
 
   return (
     <div className="font-headline px-3 space-y-5
@@ -27,7 +28,7 @@ const Categories = () => {
         {categories.map((category, index) => (
           <Link
             key={index}
-            to={category.path}
+            to={`/category/${category.path.toLowerCase()}`}
             className="rounded-lg hover:text-main-green hover:opacity-80 w-[30%] flex flex-col items-center
             md:w-1/4
             lg:w-1/6"

@@ -93,7 +93,7 @@ const Footer = () => {
             {aboutLinks.map((link, index) => (
               <li key={index}>
                 <Link
-                  to={link.href}
+                  to={`${link.href}`}
                   className="hover:text-main-green"
                   aria-label={link.text}
                 >
@@ -138,5 +138,5 @@ const Footer = () => {
     </footer>
   );
 };
-     
+
 export default Footer;

@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { DevTool } from "@hookform/devtools";
-
 // Social Media Icons Component
 const SocialMediaIcons = () => (
   <ul className="flex justify-center items-center gap-2">
@@ -24,18 +23,20 @@ const SocialIcon = ({ icon }) => (
 );
 
 // Input Field Component
-const InputField = ({ type, name, placeholder, register , message}) => (
+const InputField = ({ type, name, placeholder, register, message }) => (
   <input
     className="w-full border p-2 rounded-md outline-0 bg-slate-100 hover:border-main-green text-slate-800 duration-300
                md:w-[60%] lg:w-[80%]"
     type={type}
-    {...register(name , {
-      required: `${name} is required`,
-    },{
-      pattern: {
-        
+    {...register(
+      name,
+      {
+        required: `${name} is required`,
+      },
+      {
+        pattern: {},
       }
-    })}
+    )}
     placeholder={placeholder}
     formNoValidate
   />

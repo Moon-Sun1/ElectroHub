@@ -1,5 +1,11 @@
 import logo from "../assets/logo.png";
-import { FaHeart, FaShoppingCart, FaBars, FaTimes, FaRegUser } from "react-icons/fa";
+import {
+  FaHeart,
+  FaShoppingCart,
+  FaBars,
+  FaTimes,
+  FaRegUser,
+} from "react-icons/fa";
 import SearchBar from "./SearchBar";
 import Dropdown from "./Dropdown";
 import { Link, NavLink } from "react-router-dom";
@@ -28,14 +34,14 @@ const UserInfo = ({ isLogin, setIsLogin }) => {
 
   return (
     <div
-      className="h-10 w-8"
+      className="w-8"
       onMouseEnter={() => setIsOpenMenuHover(true)}
       onMouseLeave={() => setIsOpenMenuHover(false)}
     >
       <FaRegUser className="hover:text-main-green relative size-5 md:size-6 lg:size-5 cursor-pointer" />
       {isOpenMenuHover && (
         <div
-          className="font-headline font-bold right-24 top-10 rounded-2xl shadow-xl shadow-black absolute z-10 w-80 h-60 bg-white p-7 hidden md:block"
+          className="font-headline transition-opacity duration-700 ease-in-out font-bold right-24 top-10 rounded-2xl shadow-xl shadow-black absolute z-10 w-80 h-60 bg-white p-7 hidden md:block"
           onMouseEnter={() => setIsOpenMenuHover(true)}
           onMouseLeave={() => setIsOpenMenuHover(false)}
         >
@@ -56,11 +62,17 @@ const UserInfo = ({ isLogin, setIsLogin }) => {
           <div className="flex m-auto">
             {isLogin ? (
               <div className="flex m-auto mt-16">
-                <img className="w-16 rounded-full mr-6" src={USER_DATA.profileImg} alt="Profile" />
+                <img
+                  className="w-16 rounded-full mr-6"
+                  src={USER_DATA.profileImg}
+                  alt="Profile"
+                />
                 <div>
                   <h1>{USER_DATA.name}</h1>
                   <p className="text-gray-500">{USER_DATA.email}</p>
-                  <p className="text-blue-600 hover:text-main-green">Manage Account</p>
+                  <p className="text-blue-600 hover:text-main-green">
+                    Manage Account
+                  </p>
                 </div>
               </div>
             ) : (
@@ -83,7 +95,7 @@ const NavIcons = () => (
     </Link>
     <Link to={"/Heart"}>
       <FaHeart className="hover:text-main-green size-5 md:size-6 lg:size-5 cursor-pointer" />
-    </Link> 
+    </Link>
   </div>
 );
 
@@ -94,17 +106,26 @@ const MobileMenu = ({ visible, setVisible, isLogin, setIsLogin }) => (
     }`}
   >
     <div className="flex flex-col gap-3 pl-5 py-5 pb-10">
-      <FaTimes onClick={() => setVisible(false)} className="font-bold text-gray-500 text-3xl block" />
+      <FaTimes
+        onClick={() => setVisible(false)}
+        className="font-bold text-gray-500 text-3xl block"
+      />
       <div className="block lg:hidden">
         <div className="w-[60vh] h-[100vh] z-40 bg-slate-200">
           <div className="flex">
             {isLogin ? (
               <div className="flex mt-5 flex-col">
-                <img className="w-20 h-20 rounded-full mr-4" src={USER_DATA.profileImg} alt="Profile" />
+                <img
+                  className="w-20 h-20 rounded-full mr-4"
+                  src={USER_DATA.profileImg}
+                  alt="Profile"
+                />
                 <div className="flex flex-col gap-2 mt-5 text-left text-xl">
                   <h1>{USER_DATA.name}</h1>
                   <p className="text-gray-500">{USER_DATA.email}</p>
-                  <Link className="text-blue-600 hover:text-main-green">Manage Account</Link>
+                  <Link className="text-blue-600 hover:text-main-green">
+                    Manage Account
+                  </Link>
                 </div>
               </div>
             ) : (
@@ -217,12 +238,20 @@ const Nav = () => {
             <SearchBar />
           </div>
         </div>
-        <div className="hidden lg:block lg:flex justify-center">
+        <div className="hidden  lg:flex justify-center">
           <UserInfo isLogin={isLogin} setIsLogin={setIsLogin} />
           <NavIcons />
         </div>
-        <FaBars onClick={() => setVisible(true)} className="text-gray-500 text-4xl block lg:hidden" />
-        <MobileMenu visible={visible} setVisible={setVisible} isLogin={isLogin} setIsLogin={setIsLogin} />
+        <FaBars
+          onClick={() => setVisible(true)}
+          className="text-gray-500 text-4xl block lg:hidden"
+        />
+        <MobileMenu
+          visible={visible}
+          setVisible={setVisible}
+          isLogin={isLogin}
+          setIsLogin={setIsLogin}
+        />
       </div>
       <div className="block md:hidden">
         <SearchBar />

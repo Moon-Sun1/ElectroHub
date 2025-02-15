@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
+          'error': '#FF0000',
         "main-green": "#088178",
         "light-teal": "rgb(56,223,211)",
         "body-background": "rgb(231, 238, 240)",
@@ -29,8 +30,19 @@ export default {
       clipPath: {
         trapezoid: "polygon(20% 0, 100% 0, 100% 100%, 0 100%)",
       },
+
+      fontSize: {
+        'error': ['0.875rem', { // 14px
+          lineHeight: '1.25rem',
+          color: '#FF0000',
+        }],
+      },
+      
+
     },
   },
+
+  
   variants: {
     clipPath: ["responsive"],
   },

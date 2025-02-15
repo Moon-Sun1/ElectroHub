@@ -5,6 +5,7 @@ import NewsLetterjsx from "../components/NewsLetter";
 import Banner from "../components/Banner";
 import banner from "../assets/about/banner.png";
 import profileImg from "../assets/gohgst.webp";
+import { useForm } from "react-hook-form";
 
 import {
   FaMapMarkerAlt,
@@ -14,6 +15,17 @@ import {
 } from "react-icons/fa"; // Note: react-icons/fa
 
 const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    alert(JSON.stringify(data));
+  };
+
   const bannerInfo = {
     bannerImage: banner,
     bannerTitle: "#Let's_talk",
@@ -45,7 +57,7 @@ const Contact = () => {
     <>
       <Nav />
       <div className="  flex flex-col w-full  bg-body-background font-body ">
-        {/* ------------------banner --------------------- */}
+        {/* ------------------banner components --------------------- */}
         <Banner bannerInfo={bannerInfo} />
         {/* --------------------- map section ----------------------------- */}
         <div
@@ -109,26 +121,58 @@ const Contact = () => {
             lg:flex-row
             md:gap-8"
         >
-          <form className="w-full lg:w-[60%] border-2 rounded-lg">
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className="w-full lg:w-[60%] border-2 rounded-lg"
+          >
             <input
               className="w-full h-16 outline-none  border-2 rounded-lg border-gray-500  p-4 my-4n text-xl my-3"
-              name="name"
-              type="text"
+              {...register("firstName", {
+                required: true,
+                maxLength: 20,
+                pattern: /^[A-Za-z]+$/i,
+              })}
               placeholder="Your Name"
-              required
             />
+            {errors?.firstName?.type === "required" && (
+              <p>This field is required</p>
+            )}
+            {errors?.firstName?.type === "maxLength" && (
+              <p>First name cannot exceed 20 characters</p>
+            )}
+            {errors?.firstName?.type === "pattern" && (
+              <p>Alphabetical characters only</p>
+            )}
             <input
               className="w-full h-16 outline-none  border-2 rounded-lg border-gray-500  p-4 my-4n text-xl my-3"
-              name="email"
               type="email"
+              id="email"
               placeholder="E-mail"
-              required
+              {...register("email", {
+                required: "Email is required",
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, // Basic email regex
+                  message: "Invalid email address",
+                },
+              })}
             />
+            {errors.email && (
+              <p className="text-error">{errors.email.message}</p>
+            )}
+            <br />
             <input
               className="w-full h-16 outline-none  border-2 rounded-lg border-gray-500  p-4 my-4n text-xl my-3"
               type="text"
               placeholder="Subject"
+              {...register("Subject", {
+                required: true,
+                maxLength: 20,
+                pattern: /^[A-Za-z]+$/i,
+              })}
             />
+            {errors?.Subject?.type === "required" && (
+              <p className="text-error">This field is required</p>
+            )}
             <textarea
               className="w-full outline-gray-600  border-2 rounded-lg border-gray-500  p-4 my-4n text-xl my-3"
               name="message"
@@ -136,13 +180,20 @@ const Contact = () => {
               cols="30"
               rows="10"
               placeholder="Your Message"
-              required
-            ></textarea>
+              {...register("textarea", {
+                required: true,
+                maxLength: 20,
+                pattern: /^[A-Za-z]+$/i,
+              })}
+            ></textarea>{" "}
+            {errors?.textarea?.type === "required" && (
+              <p className="text-error"> This field is required</p>
+            )}
             <br />
             <button
+              type="submit"
               className="text-white rounded-lg bg-main-green hover:bg-green-500 py-2 w-36 text-center
                               lg:px-4 lg:py-4"
-              id="contact-form-btn"
             >
               Submit
             </button>
@@ -150,7 +201,7 @@ const Contact = () => {
 
           {/* ------------------ Marketing Manager display data ---------------------------------- */}
 
-          <div className="flex flex-col gap-10 justify-start h-full   w-[35%] my-5">
+          <div className="flex flex-col gap-10 justify-start h-full w-full   md:w-[35%] my-5">
             {MarketingManager.map((Manager, key) => (
               <div className="flex   items-center  gap-6 w-full " key={key}>
                 <img
@@ -159,7 +210,7 @@ const Contact = () => {
                   alt=""
                 />
 
-                <div className=" flex flex-col w-[200px] text-sm">
+                <div className=" flex flex-col  w-[200px] text-sm">
                   <p className="font-bold text-xl mb-3 "> {Manager.name} </p>
 
                   <p className="   ">Sentor Marketing Manager</p>
@@ -171,10 +222,12 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* ------------------ NewsLetter ----------------- */}
+        {/* ------------------ NewsLetter components----------------- */}
         <div className="my-16">
           <NewsLetterjsx />
         </div>
+
+        {/* ------------------ footer components----------------- */}
         <Footer />
       </div>
     </>

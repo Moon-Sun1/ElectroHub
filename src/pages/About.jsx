@@ -57,11 +57,11 @@ const About = () => {
           </div>
         </div>
         {/* ------------------ benfit section ---------------------------------- */}
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6  my-6 lg:my-20 m-4">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6  my-6 lg:my-20 m-4  px-4 sm:px-5 md:px-7 lg:px-9">
           {images.map((item, key) => (
             <div
               key={key}
-              className="h-48 w-full lg:w-48 bg-white flex flex-col justify-center items-center rounded-2xl m-auto p-2 transition duration-300 hover:scale-110"
+              className="h-48 w-full  bg-white flex flex-col justify-center items-center rounded-2xl m-auto p-2 transition duration-300 hover:scale-105"
             >
               <li className="">
                 <img src={item.src} alt={item.title} />

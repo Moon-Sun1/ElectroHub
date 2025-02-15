@@ -34,7 +34,7 @@ const Footer = () => {
     { href: "about", text: "About Us" },
     { href: "#", text: "Privacy Policy" },
     { href: "#", text: "Terms & Conditions" },
-    { href: "contact.php", text: "Contact Us" },
+    { href: "contact", text: "Contact Us" },
   ];
 
   const accountLinks = [

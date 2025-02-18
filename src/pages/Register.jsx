@@ -1,10 +1,12 @@
 import backgroundImage from "../assets/RegisterImg2.jpg";
 import { FaGoogle, FaGithub } from "react-icons/fa6";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaSignOutAlt } from "react-icons/fa";
+import { HiHome } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { DevTool } from "@hookform/devtools";
+
 // Social Media Icons Component
 const SocialMediaIcons = () => (
   <ul className="flex justify-center items-center gap-2">
@@ -23,28 +25,51 @@ const SocialIcon = ({ icon }) => (
 );
 
 // Input Field Component
-const InputField = ({ type, name, placeholder, register, message }) => (
-  <input
-    className="w-full border p-2 rounded-md outline-0 bg-slate-100 hover:border-main-green text-slate-800 duration-300
-               md:w-[60%] lg:w-[80%]"
-    type={type}
-    {...register(
-      name,
-      {
-        required: `${name} is required`,
-      },
-      {
-        pattern: {},
-      }
+const InputField = ({ type, name, placeholder, register, errors }) => (
+  <div className="w-full md:w-[60%] lg:w-[80%]">
+    <input
+      className={`w-full border p-2 rounded-md outline-0 bg-slate-100 hover:border-main-green text-slate-800 duration-300 ${
+        errors[name] ? "border-red-500" : ""
+      }`}
+      type={type}
+      {...register(name, {
+        required: {
+          value: true,
+          message: "This field is required",
+        },
+        ...(name === "email" && {
+          pattern: {
+            value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+            message: "Invalid email format",
+          },
+        }),
+        ...(name === "password" && {
+          pattern: {
+            value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/,
+            message:
+              "Password must contain at least 8 characters, one uppercase letter, one lowercase letter, and one number",
+          },
+        }),
+      })}
+      placeholder={placeholder}
+      aria-invalid={!!errors[name]}
+    />
+    {errors[name] && (
+      <p className="text-red-500 text-sm mt-1">{errors[name].message}</p>
     )}
-    placeholder={placeholder}
-    formNoValidate
-  />
+  </div>
 );
 
 const Register = () => {
-  const form = useForm();
-  const { register, control, handleSubmit } = form;
+  const {
+    register,
+    control,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    mode: "onChange", // Enable real-time validation
+  });
+
   const [isSignUp, setIsSignUp] = useState(false); // State to track sign-up mode
 
   const toggleForm = () => {
@@ -52,7 +77,7 @@ const Register = () => {
   };
 
   const onSubmit = (data) => {
-    console.log("submit", data);
+    console.log("Form Data:", data);
   };
 
   return (
@@ -60,6 +85,19 @@ const Register = () => {
       className="relative w-full flex justify-center items-center font-body h-screen
                   lg:bg-gradient-to-r from-gray-950 via-slate-800 to-teal-900"
     >
+      <Link
+        to="/"
+        className="hidden lg:flex items-center gap-1 text-body-background absolute top-6 left-6 text-xl cursor-pointer hover:text-main-green"
+      >
+        <p>Home</p>
+        <FaSignOutAlt />
+      </Link>
+      <Link
+        to="/"
+        className="lg:hidden flex items-center text-body-background  font-bold absolute top-3 left-3 text-3xl cursor-pointer hover:text-main-green z-20"
+      >
+        <HiHome />
+      </Link>
       <div
         className="bg-transparent w-full h-full relative flex flex-col justify-end
                      lg:w-[60%] lg:h-[80%] lg:flex-row lg:justify-center lg:items-center lg:bg-header-background lg:rounded-3xl overflow-hidden"
@@ -101,8 +139,9 @@ const Register = () => {
               <InputField
                 type="text"
                 placeholder="Name"
-                name={"name"}
+                name="name"
                 register={register}
+                errors={errors}
               />
             )}
             <InputField
@@ -110,12 +149,14 @@ const Register = () => {
               name="email"
               placeholder="Email"
               register={register}
+              errors={errors}
             />
             <InputField
               type="password"
               name="password"
               placeholder="Password"
               register={register}
+              errors={errors}
             />
             {/* Conditionally Render Forget Password Link */}
             {!isSignUp && (
@@ -133,6 +174,8 @@ const Register = () => {
               {isSignUp ? "Sign up" : "Sign in"}
             </button>
           </form>
+
+          {/* DevTool for Debugging */}
           <DevTool control={control} />
 
           {/* Toggle Button */}

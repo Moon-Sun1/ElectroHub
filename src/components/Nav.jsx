@@ -70,9 +70,12 @@ const UserInfo = ({ isLogin, setIsLogin }) => {
                 <div>
                   <h1>{USER_DATA.name}</h1>
                   <p className="text-gray-500">{USER_DATA.email}</p>
-                  <p className="text-blue-600 hover:text-main-green">
+                  <Link
+                    to="MangeAccount"
+                    className="text-blue-600 hover:text-main-green cursor-pointer"
+                  >
                     Manage Account
-                  </p>
+                  </Link>
                 </div>
               </div>
             ) : (
@@ -123,7 +126,10 @@ const MobileMenu = ({ visible, setVisible, isLogin, setIsLogin }) => (
                 <div className="flex flex-col gap-2 mt-5 text-left text-xl">
                   <h1>{USER_DATA.name}</h1>
                   <p className="text-gray-500">{USER_DATA.email}</p>
-                  <Link className="text-blue-600 hover:text-main-green">
+                  <Link
+                    to="MangeAccount"
+                    className="text-blue-600 hover:text-main-green"
+                  >
                     Manage Account
                   </Link>
                 </div>

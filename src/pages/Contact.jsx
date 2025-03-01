@@ -1,4 +1,3 @@
-import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import NewsLetterjsx from "../components/NewsLetter";
@@ -20,7 +19,6 @@ const Contact = () => {
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
   } = useForm();
 

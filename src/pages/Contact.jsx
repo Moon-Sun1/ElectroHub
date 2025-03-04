@@ -136,13 +136,15 @@ const Contact = () => {
               placeholder="Your Name"
             />
             {errors?.firstName?.type === "required" && (
-              <p>This field is required</p>
+              <p className="text-error">This field is required</p>
             )}
             {errors?.firstName?.type === "maxLength" && (
-              <p>First name cannot exceed 20 characters</p>
+              <p className="text-error">
+                First name cannot exceed 20 characters
+              </p>
             )}
             {errors?.firstName?.type === "pattern" && (
-              <p>Alphabetical characters only</p>
+              <p className="text-error">Alphabetical characters only</p>
             )}
             <input
               className="w-full h-16 outline-none  border-2 rounded-lg border-gray-500  p-4 my-4n text-xl my-3"

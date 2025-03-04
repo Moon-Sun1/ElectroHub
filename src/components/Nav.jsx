@@ -165,7 +165,7 @@ const MobileMenu = ({ visible, setVisible, isLogin, setIsLogin }) => (
               <NavLink
                 className="border active:bg-gray-400 hover:bg-gray-300 rounded-xl"
                 onClick={() => setVisible(false)}
-                to="/card"
+                to="/ShoppingCart"
               >
                 Cart
                 <FaShoppingCart className="cursor-pointer inline text-center ml-2" />

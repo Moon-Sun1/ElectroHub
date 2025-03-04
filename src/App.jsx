@@ -6,7 +6,7 @@ import ProductPreView from "./pages/ProductPreView";
 import SearchPage from "./pages/SearchPage";
 import Contact from "./pages/Contact";
 import Register from "./pages/Register";
-import MangeAccount from "./pages/MangeAccount";
+import ShoppingCart from "./pages/ShoppingCart";
 
 // import Products from "./pages/Products";
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <Route path="/ProductPreView/:productId" element={<ProductPreView />} />
       <Route path="/search/:s" element={<SearchPage />} />
       <Route path="/Register" element={<Register />} />
-      <Route path="/MangeAccount" element={<MangeAccount />} />
+      <Route path="ShoppingCart" element={<ShoppingCart/>} />
     </Routes>
   );
 }

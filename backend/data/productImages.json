@@ -1,0 +1,507 @@
+{
+  "Accessories": [
+    {
+      "filename": "AC01 Over-Ear Headphones Wired.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\AC01 Over-Ear Headphones Wired.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "apple Homepod 2nd gen.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\apple Homepod 2nd gen.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "Apple iPhone 16 15 Charger Fast Charging.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\Apple iPhone 16 15 Charger Fast Charging.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "Apple Transparent ESR iphone 15 Pro Case.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\Apple Transparent ESR iphone 15 Pro Case.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "Apple Watch Ultra 2.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\Apple Watch Ultra 2.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "Apple_watch_series_10-removebg-preview.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\Apple_watch_series_10-removebg-preview.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "Beats Studio Buds.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\Beats Studio Buds.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "Bose QuietComfort Ultra.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\Bose QuietComfort Ultra.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "Dell Laptop Charger.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\Dell Laptop Charger.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "ESR for iPhone 15 Pro Case with MagSafe.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\ESR for iPhone 15 Pro Case with MagSafe.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "Google Pixel Watch.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\Google Pixel Watch.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "Hp USB Wired Computer Mouse.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\Hp USB Wired Computer Mouse.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "Hp Wireless Mouse Jiggler.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\Hp Wireless Mouse Jiggler.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "INIU Power Bank Charger.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\INIU Power Bank Charger.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "JanSport Right Pack Backpack .png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\JanSport Right Pack Backpack .png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "MATEIN Travel Laptop Backpack.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\MATEIN Travel Laptop Backpack.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "Oterkin for Samsung Galaxy S24 Case Clear.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\Oterkin for Samsung Galaxy S24 Case Clear.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "RAZER Basilisk V3 Wirless Gaming.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\RAZER Basilisk V3 Wirless Gaming.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "SAMSUNG Galaxy Watch 4 Classic.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\SAMSUNG Galaxy Watch 4 Classic.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "SteelSeries Apex Pro TKL HyperMagnetic Gaming Keyboard.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\SteelSeries Apex Pro TKL HyperMagnetic Gaming Keyboard.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "TAGRY Bluetooth Headphones.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\TAGRY Bluetooth Headphones.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "TENDLIN Compatible with Samsung Galaxy S22 Plus Case.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\TENDLIN Compatible with Samsung Galaxy S22 Plus Case.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "Womier Keyboard.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\Womier Keyboard.png",
+      "category": "Accessories"
+    },
+    {
+      "filename": "Ytonet Laptop Case.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Accessories\\Ytonet Laptop Case.png",
+      "category": "Accessories"
+    }
+  ],
+  "Cameras": [
+    {
+      "filename": "Canon EOS 5D 12.8 MP Digital SLR Camera.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Cameras\\Canon EOS 5D 12.8 MP Digital SLR Camera.png",
+      "category": "Cameras"
+    },
+    {
+      "filename": "Canon EOS R7.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Cameras\\Canon EOS R7.png",
+      "category": "Cameras"
+    },
+    {
+      "filename": "Canon PowerShot ELPH 360 Digital Camera.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Cameras\\Canon PowerShot ELPH 360 Digital Camera.png",
+      "category": "Cameras"
+    },
+    {
+      "filename": "DJI Osmo Pocket 3.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Cameras\\DJI Osmo Pocket 3.png",
+      "category": "Cameras"
+    },
+    {
+      "filename": "ElectroHub special camera.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Cameras\\ElectroHub special camera.png",
+      "category": "Cameras"
+    },
+    {
+      "filename": "Fujifilm X-T30 II Body - Silver.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Cameras\\Fujifilm X-T30 II Body - Silver.png",
+      "category": "Cameras"
+    },
+    {
+      "filename": "Fujifilm X100T 16 MP Digital Camera (Silver).png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Cameras\\Fujifilm X100T 16 MP Digital Camera (Silver).png",
+      "category": "Cameras"
+    },
+    {
+      "filename": "GoPro HERO12 Black.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Cameras\\GoPro HERO12 Black.png",
+      "category": "Cameras"
+    },
+    {
+      "filename": "Nikon D780.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Cameras\\Nikon D780.png",
+      "category": "Cameras"
+    },
+    {
+      "filename": "Nikon Z50 Body Mirrorless Camera.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Cameras\\Nikon Z50 Body Mirrorless Camera.png",
+      "category": "Cameras"
+    },
+    {
+      "filename": "Panasonic LUMIX S5 Full Frame Mirrorless Camera.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Cameras\\Panasonic LUMIX S5 Full Frame Mirrorless Camera.png",
+      "category": "Cameras"
+    },
+    {
+      "filename": "samsung_gear_camera.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Cameras\\samsung_gear_camera.png",
+      "category": "Cameras"
+    },
+    {
+      "filename": "Sony Alpha a7II Mirrorless Digital Camera.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Cameras\\Sony Alpha a7II Mirrorless Digital Camera.png",
+      "category": "Cameras"
+    },
+    {
+      "filename": "Sony RX100VA.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Cameras\\Sony RX100VA.png",
+      "category": "Cameras"
+    }
+  ],
+  "Gaming": [
+    {
+      "filename": "Hyperkin X91 Wired Controller for Xbox Series X.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Gaming\\Hyperkin X91 Wired Controller for Xbox Series X.png",
+      "category": "Gaming"
+    },
+    {
+      "filename": "Nintendo Switch 2 console.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Gaming\\Nintendo Switch 2 console.png",
+      "category": "Gaming"
+    },
+    {
+      "filename": "Nintendo Switch Lite.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Gaming\\Nintendo Switch Lite.png",
+      "category": "Gaming"
+    },
+    {
+      "filename": "Nintendo Switch.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Gaming\\Nintendo Switch.png",
+      "category": "Gaming"
+    },
+    {
+      "filename": "PDP Gaming Enhanced Xbox Series X_S Controller.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Gaming\\PDP Gaming Enhanced Xbox Series X_S Controller.png",
+      "category": "Gaming"
+    },
+    {
+      "filename": "PDP Victrix Pro BFG Wireless Gaming Controller for Playstation 5.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Gaming\\PDP Victrix Pro BFG Wireless Gaming Controller for Playstation 5.png",
+      "category": "Gaming"
+    },
+    {
+      "filename": "PDP VICTRIX PRO BGF Xbox Series X_S controler.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Gaming\\PDP VICTRIX PRO BGF Xbox Series X_S controler.png",
+      "category": "Gaming"
+    },
+    {
+      "filename": "PlayStation 4 Slim .png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Gaming\\PlayStation 4 Slim .png",
+      "category": "Gaming"
+    },
+    {
+      "filename": "PlayStation 5 digital Edition Slim.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Gaming\\PlayStation 5 digital Edition Slim.png",
+      "category": "Gaming"
+    },
+    {
+      "filename": "Razer Universal Quick Charging Stand for Xbox Series X.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Gaming\\Razer Universal Quick Charging Stand for Xbox Series X.png",
+      "category": "Gaming"
+    },
+    {
+      "filename": "Sony PlayStation DualSense Wireless Controller Midnight Black for PlayStation 5.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Gaming\\Sony PlayStation DualSense Wireless Controller Midnight Black for PlayStation 5.png",
+      "category": "Gaming"
+    },
+    {
+      "filename": "Xbox Elite Series 2 Core Wireless Gaming Controller  White  Xbox Series X.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Gaming\\Xbox Elite Series 2 Core Wireless Gaming Controller  White  Xbox Series X.png",
+      "category": "Gaming"
+    },
+    {
+      "filename": "Xbox One s.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Gaming\\Xbox One s.png",
+      "category": "Gaming"
+    },
+    {
+      "filename": "Xbox Series X_S.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Gaming\\Xbox Series X_S.png",
+      "category": "Gaming"
+    },
+    {
+      "filename": "Xbox_series_s.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Gaming\\Xbox_series_s.png",
+      "category": "Gaming"
+    }
+  ],
+  "Laptops": [
+    {
+      "filename": "acer Aspire 1 A115-32-C96U Home and studint slim laptop.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\acer Aspire 1 A115-32-C96U Home and studint slim laptop.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "Acer Swift 3 SF314-43-R6NE Laptop.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\Acer Swift 3 SF314-43-R6NE Laptop.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "Apple 2024 MacBook Air 13-inch Laptop.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\Apple 2024 MacBook Air 13-inch Laptop.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "Apple Mac Pro 16.2.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\Apple Mac Pro 16.2.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "ASUS 2023 Vivobook 14 Laptop, 14” FHD.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\ASUS 2023 Vivobook 14 Laptop, 14” FHD.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "ASUS ZenBook Duo UX481 14” FHD NanoEdge Bezel Touch.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\ASUS ZenBook Duo UX481 14” FHD NanoEdge Bezel Touch.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "Dell 2024 XPS 15 9530 Business Laptop.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\Dell 2024 XPS 15 9530 Business Laptop.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "Dell Insprion 3511 Laptop.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\Dell Insprion 3511 Laptop.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "Dell Latitude 5530 Business Laptop.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\Dell Latitude 5530 Business Laptop.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "Dell XPS 13 9310 Touchscren.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\Dell XPS 13 9310 Touchscren.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "HP_Envy_2-in-1_touchScreen.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\HP_Envy_2-in-1_touchScreen.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "HP_Spectre_x360_13.5_Touchscreen.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\HP_Spectre_x360_13.5_Touchscreen.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "Huawei MateBook X Pro Laptop.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\Huawei MateBook X Pro Laptop.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "Lenovo_2022_Newest_Ideapad_3_Laptop.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\Lenovo_2022_Newest_Ideapad_3_Laptop.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "Lenovo_ThinkPad_E16_Business_Laptop.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\Lenovo_ThinkPad_E16_Business_Laptop.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "Lenovo_ThinkPad_X1_Titanium_Yoga_2-in-1_Business_Laptop.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\Lenovo_ThinkPad_X1_Titanium_Yoga_2-in-1_Business_Laptop.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "Microsoft Surface Laptop (2024), Windows 11 Copilot+ PC, 15 Touchscreen.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\Microsoft Surface Laptop (2024), Windows 11 Copilot+ PC, 15 Touchscreen.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "MSI GS66 Stealth GS66 Stealth 11UG-658 15.6 Gaming Notebook.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\MSI GS66 Stealth GS66 Stealth 11UG-658 15.6 Gaming Notebook.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "MSI Raider GE76 Gaming Laptop.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\MSI Raider GE76 Gaming Laptop.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "Razer Blade 16 (2024) Gaming Laptop.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\Razer Blade 16 (2024) Gaming Laptop.png",
+      "category": "Laptops"
+    },
+    {
+      "filename": "Xiaomi NoteBook Pro.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\Laptops\\Xiaomi NoteBook Pro.png",
+      "category": "Laptops"
+    }
+  ],
+  "SmartPhones": [
+    {
+      "filename": "Apple iPad Air 11-inch.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\Apple iPad Air 11-inch.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "Apple iPad Mini A15 Bionic.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\Apple iPad Mini A15 Bionic.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "Apple iPad pro 13-Inch.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\Apple iPad pro 13-Inch.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "Apple-iPhone-14-Pro-Max.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\Apple-iPhone-14-Pro-Max.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "galaxy z fold5 AI.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\galaxy z fold5 AI.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "Google Pixel 8 Pro.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\Google Pixel 8 Pro.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "Google Pixel tablet .png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\Google Pixel tablet .png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "Google_Pixel_9_pro_XL.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\Google_Pixel_9_pro_XL.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "Huawei Mate 60pro.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\Huawei Mate 60pro.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "Huawei MediaPad M6.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\Huawei MediaPad M6.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "Huawei Nova 11 Pro.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\Huawei Nova 11 Pro.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "Huawei nova 9.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\Huawei nova 9.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "iphone 15 pro max.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\iphone 15 pro max.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "iphone 16 pro max desert titanium.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\iphone 16 pro max desert titanium.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "MatePad Pro 10.8.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\MatePad Pro 10.8.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "samsung galaxy A25 5G.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\samsung galaxy A25 5G.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "samsung galaxy s23+.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\samsung galaxy s23+.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "samsung galaxy tap A9.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\samsung galaxy tap A9.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "samsung galaxy tap s9 ultra.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\samsung galaxy tap s9 ultra.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "Samsung_s24_Ultra.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\Samsung_s24_Ultra.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "Xiaomi Pad 6S Pro.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\Xiaomi Pad 6S Pro.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "Xiaomi Poco C55.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\Xiaomi Poco C55.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "Xiaomi Poco F5 Pro 5G.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\Xiaomi Poco F5 Pro 5G.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "Xiaomi Poco M6 Pro 4G.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\Xiaomi Poco M6 Pro 4G.png",
+      "category": "SmartPhones"
+    },
+    {
+      "filename": "Xiaomi Poco X6 Pro 5G.png",
+      "path": "c:\\MoonLight\\ElectroHub\\frontend\\src\\assets\\products image\\SmartPhones\\Xiaomi Poco X6 Pro 5G.png",
+      "category": "SmartPhones"
+    }
+  ]
+}

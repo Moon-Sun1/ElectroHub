@@ -30,3 +30,5 @@ async function comparePassword(plainPassword, storedHash) {
    
 
 })().catch(console.error);
+
+export default comparePassword;

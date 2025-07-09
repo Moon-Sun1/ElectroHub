@@ -33,16 +33,16 @@ const AddProduct = () => {
   };
 
   return (
-    <div className="w-full h-full flex flex-col items-center p-6 relative z-0">
-      <h1 className="w-full text-2xl font-bold mb-4">Add Product</h1>
-      <div className="relative flex w-full h-full items-center justify-between bg-white rounded-lg shadow-md p-6">
-        <div className=" absolute w-[2px] h-3/4 bg-gray-400 left-[60%] top-[15%]"></div>
-        <div className="w-[60%]">
+    <div className="w-full h-full flex flex-col items-center p-2 sm:p-4 md:p-6 relative z-0">
+      <h1 className="w-full text-xl sm:text-2xl font-bold mb-2 sm:mb-4 text-center">Add Product</h1>
+      <div className="relative flex flex-col lg:flex-row w-full h-full items-center lg:items-start justify-between bg-white rounded-lg shadow-md p-2 sm:p-4 md:p-6 gap-6 lg:gap-0">
+        <div className="hidden lg:block absolute w-[2px] h-3/4 bg-gray-200 left-[60%] top-[15%]"></div>
+        <div className="w-full lg:w-[60%] flex flex-col items-center">
           <ProductForm
             handlePreview={handlePreviewChange}
           />
         </div>
-        <div className="w-[30%]">
+        <div className="w-full mt-6 lg:mt-0 lg:w-[30%] flex justify-center">
           <Card data={previewData} />
         </div>
       </div>

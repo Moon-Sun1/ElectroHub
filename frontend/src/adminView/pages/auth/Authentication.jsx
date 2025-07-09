@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoPersonOutline, IoShieldOutline } from "react-icons/io5";
 import { MdOutlineMail, MdOutlineWorkHistory } from "react-icons/md";
 import LoginForm from "../../components/auth/LoginForm";
@@ -10,25 +10,64 @@ const Authentication = () => {
   const [isSignedIn, setIsSignedIn] = useState(false);
   const [adminInfo, setAdminInfo] = useState(null);
 
+  useEffect(() => {
+    const token = localStorage.getItem("jwtToken");
+    if (token) {
+      try {
+        const payload = JSON.parse(atob(token.split(".")[1]));
+        // Check if token is expired
+        if (payload.exp && Date.now() < payload.exp * 1000) {
+          setIsSignedIn(true);
+          const roleName = "admin"; // Assuming the role is always 'admin' for this example
+          setAdminInfo({
+            name : payload.full_name,
+            email: payload.email,
+            role: roleName,
+            lastLogin: new Date(payload.iat * 1000).toLocaleString(),
+          });
+        }
+      } catch {
+        console.error("Invalid token format");
+        // If the token is invalid, clear it
+        localStorage.removeItem("jwtToken");
+        setIsSignedIn(false);
+        setAdminInfo(null);
+      }
+    }
+  }, []);
+
   const handleLogin = async (data) => {
     try {
-      // Here you would typically make an API call to verify credentials
-      // For demo purposes, we'll just simulate a successful login
-      const mockAdminInfo = {
-        name: "Moon",
-        email: data.email,
-        role: "Administrator",
-        lastLogin: new Date().toLocaleString(),
-      };
-
-      setAdminInfo(mockAdminInfo);
-      setIsSignedIn(true);
+      const response = await fetch("http://localhost:5000/api/auth/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: data.email, password: data.password }),
+      });
+      const result = await response.json();
+      if (response.ok && result.token) {
+        // Store JWT in localStorage
+        localStorage.setItem("jwtToken", result.token);
+        setAdminInfo({
+          name: result.user.first_name + " " + result.user.last_name,
+          email: result.user.email,
+          role: result.user.role,
+          lastLogin: new Date().toLocaleString(),
+        });
+        setIsSignedIn(true);
+      } else {
+        // Show error message (could use a toast or state)
+        alert(result.message || "Login failed");
+      }
     } catch (error) {
       console.error("Authentication failed:", error);
+      alert("Login failed. Please try again.");
     }
   };
 
   const handleSignOut = () => {
+    localStorage.removeItem("jwtToken");
     setIsSignedIn(false);
     setAdminInfo(null);
   };

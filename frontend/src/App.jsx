@@ -8,16 +8,15 @@ import Contact from "./pages/Contact";
 import Register from "./pages/Register";
 import ShoppingCart from "./pages/ShoppingCart";
 import AdminPanelLayout from "./adminView/components/layout/AdminPanelLayout";
-import Authentication from "./adminView/pages/auth/authentication";
+import Authentication from "./adminView/pages/auth/Authentication";
 import Products from "../src/adminView/pages/products/Products";
 import Order from "../src/adminView/pages/orders/Order";
 import Customers from "../src/adminView/pages/customers/Customers";
 import Dashboard from "../src/adminView/pages/dashboard/Dashboard";
 import MangeAccount from "./pages/MangeAccount";
 import AddProduct from "../src/adminView/pages/products/AddProduct";
-
-
-
+import EditProduct from "../src/adminView/pages/products/EditProduct";
+import ProtectedRoute from "./adminView/components/auth/ProtectedRoute";
 
 
 // import Products from "./pages/Products";
@@ -38,11 +37,12 @@ function App() {
       <Route path="/admin" element={<AdminPanelLayout />} >
         <Route index element={<Navigate to="authentication" replace />} />
         <Route path="authentication" element={<Authentication />} />
-        <Route path="products" element={<Products />} />
-        <Route path="products/add" element={<AddProduct />} />
-        <Route path="orders" element={<Order />} />
-        <Route path="customers" element={<Customers />} />
-        <Route path="dashboard" element={<Dashboard />} />
+        <Route path="products" element={<ProtectedRoute><Products /></ProtectedRoute>} />
+        <Route path="products/add" element={<ProtectedRoute><AddProduct /></ProtectedRoute>} />
+        <Route path="products/edit/:productId" element={<ProtectedRoute><EditProduct /></ProtectedRoute>} />
+        <Route path="orders" element={<ProtectedRoute><Order /></ProtectedRoute>} />
+        <Route path="customers" element={<ProtectedRoute><Customers /></ProtectedRoute>} />
+        <Route path="dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
       </Route>
     </Routes>
   );

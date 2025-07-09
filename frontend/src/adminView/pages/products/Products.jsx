@@ -3,12 +3,12 @@ import { FaEdit, FaTrash, FaPlus } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 // Mobile Product Card Component
-const MobileProductCard = ({ product }) => {
+const MobileProductCard = ({ product, onDelete }) => {
   return (
     <div className="bg-white rounded-lg shadow-sm p-4 mb-4">
       <div className="flex items-start gap-4">
         <img
-          src={product.image_url}
+          src={product.image_url && product.image_url.startsWith('/assets/products-image/') ? `http://localhost:5000${product.image_url}` : product.image_url}
           alt={product.name}
           className="h-20 w-20 object-cover rounded"
         />
@@ -54,7 +54,7 @@ const MobileProductCard = ({ product }) => {
               <FaEdit />
             </Link>
             <button
-              onClick={() => console.log("Delete product:", product.product_id)}
+              onClick={() => onDelete(product.product_id)}
               className="text-red-600 hover:text-red-900"
             >
               <FaTrash />
@@ -127,6 +127,22 @@ const Products = () => {
       matchesStatus
     );
   });
+
+  const handleDeleteProduct = async (productId) => {
+    if (!window.confirm("Are you sure you want to delete this product?")) return;
+    try {
+      const token = localStorage.getItem("jwtToken");
+      const response = await fetch(`http://localhost:5000/api/products/${productId}`, {
+        method: "DELETE",
+        headers: token ? { Authorization: `Bearer ${token}` } : {},
+      });
+      if (!response.ok) throw new Error("Failed to delete product");
+      setProducts((prev) => prev.filter((p) => p.product_id !== productId));
+      alert("Product deleted successfully!");
+    } catch (err) {
+      alert("Error deleting product: " + err.message);
+    }
+  };
 
   return (
     <div className="w-full h-full flex flex-col p-4 md:p-6 lg:p-6">
@@ -288,7 +304,7 @@ const Products = () => {
                 <tr key={product.product_id}>
                   <td className="px-5 py-4 whitespace-nowrap">
                     <img
-                      src={product.image_url}
+                      src={product.image_url && product.image_url.startsWith('/assets/products-image/') ? `http://localhost:5000${product.image_url}` : product.image_url}
                       alt={product.name}
                       className="h-12 w-12 object-cover rounded"
                     />
@@ -357,9 +373,7 @@ const Products = () => {
                         <FaEdit />
                       </Link>
                       <button
-                        onClick={() =>
-                          console.log("Delete product:", product.product_id)
-                        }
+                        onClick={() => handleDeleteProduct(product.product_id)}
                         className="text-red-600 hover:text-red-900"
                       >
                         <FaTrash />
@@ -376,7 +390,7 @@ const Products = () => {
       {/* Products Display - Mobile Card View */}
       <div className="md:hidden">
         {filteredProducts.map((products) => (
-          <MobileProductCard key={products.product_id} product={products} />
+          <MobileProductCard key={products.product_id} product={products} onDelete={handleDeleteProduct} />
         ))}
       </div>
     </div>

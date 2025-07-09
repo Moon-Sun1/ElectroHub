@@ -4,6 +4,27 @@ import productModels from "../models/productModels.js";
 export const createProduct = async (req, res) => {
   try {
     const productData = req.body;
+    productData.category_id = productData.category_id || productData.category;
+    // If an image was uploaded, set image_url to the static path
+    if (req.file) {
+      // Build the static URL path for the image
+      const categoryMap = {
+        1: "SmartPhones",
+        2: "Laptops",
+        3: "Gaming",
+        4: "Accessories",
+        5: "Cameras",
+        SmartPhones: "SmartPhones",
+        Laptops: "Laptops",
+        Gaming: "Gaming",
+        Accessories: "Accessories",
+        Cameras: "Cameras",
+      };
+      let category =
+        req.body.category || req.body.category_name || "Accessories";
+      category = categoryMap[category] || "Accessories";
+      productData.image_url = `/assets/products-image/${category}/${req.file.originalname}`;
+    }
     // Optionally validate required fields here
     const newProduct = await productModels.createProduct(productData);
     res.status(201).json(newProduct);
@@ -47,9 +68,29 @@ export const updateProduct = async (req, res) => {
     return res.status(400).json({ message: "Invalid product ID" });
   }
   try {
+    const productData = req.body;
+    productData.category_id = productData.category_id || productData.category;
+    if (req.file) {
+      const categoryMap = {
+        1: "SmartPhones",
+        2: "Laptops",
+        3: "Gaming",
+        4: "Accessories",
+        5: "Cameras",
+        SmartPhones: "SmartPhones",
+        Laptops: "Laptops",
+        Gaming: "Gaming",
+        Accessories: "Accessories",
+        Cameras: "Cameras",
+      };
+      let category =
+        req.body.category || req.body.category_name || "Accessories";
+      category = categoryMap[category] || "Accessories";
+      productData.image_url = `/assets/products-image/${category}/${req.file.originalname}`;
+    }
     const updatedProduct = await productModels.updateProduct(
       productId,
-      req.body
+      productData
     );
     if (!updatedProduct) {
       return res.status(404).json({ message: "Product not found" });

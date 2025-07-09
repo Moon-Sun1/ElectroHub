@@ -21,7 +21,7 @@ const productModel = {
   },
 
   async getProductById(productId) {
-    const query = "SELECT * FROM products WHERE id = $1";
+    const query = "SELECT * FROM products WHERE product_id = $1";
     try {
       const { rows } = await dbPool.query(query, [productId]);
       return rows[0];
@@ -59,8 +59,8 @@ const productModel = {
   async updateProduct(productId, productData) {
     const query = `
       UPDATE products
-      SET name = $1, description = $2, price = $3, category_id = $4, image_url = $5
-      WHERE id = $6
+      SET name = $1, description = $2, price = $3, category_id = $4, image_url = $5 , company = $6 , stock_quantity = $7
+      WHERE product_id = $8
       RETURNING *`;
     const values = [
       productData.name,
@@ -68,6 +68,8 @@ const productModel = {
       productData.price,
       productData.category_id,
       productData.image_url,
+      productData.company,
+      productData.stock_quantity,
       productId,
     ];
     try {
@@ -80,7 +82,7 @@ const productModel = {
   },
 
   async deleteProduct(productId) {
-    const query = "DELETE FROM products WHERE id = $1 RETURNING *";
+    const query = "DELETE FROM products WHERE product_id = $1 RETURNING *";
     try {
       const { rows } = await dbPool.query(query, [productId]);
       return rows[0];

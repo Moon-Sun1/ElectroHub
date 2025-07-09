@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 
-
 // Social Media Icons Component
 const SocialMediaIcons = () => (
   <ul className="flex justify-center items-center gap-2">
@@ -90,49 +89,68 @@ const Register = () => {
 
   // Handles the second step (optional fields)
   const handleFinish = async (data) => {
+    // Map frontend fields to backend expected names
+    const payload = {
+      first_name: data.firstName,
+      last_name: data.lastName,
+      email: data.email,
+      password: data.password,
+      username: data.username,
+      phone_number: data.phone_number,
+      address: data.address,
+      city: data.city,
+      state: data.state,
+      country: data.country,
+      postal_code: data.postal_code,
+    };
     try {
-      const response = await fetch('http://localhost:5000/api/register', {
-        method: 'POST',
+      const response = await fetch("http://localhost:5000/api/auth/register", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(payload),
       });
       const result = await response.json();
       if (response.ok) {
-        console.log('Registration successful:', result);
+        console.log("Registration successful:", result);
         // Redirect or show success message
       } else {
-        console.error('Registration failed:', result.message);
+        console.error("Registration failed:", result.message);
         // Show error message
       }
     } catch (error) {
-      console.error('Error:', error);
+      console.error("Error:", error);
       // Show error message
     }
   };
 
   // Handles skipping optional fields
   const handleSkip = async () => {
-    const requiredData = (({ firstName, lastName, email, password }) => ({ firstName, lastName, email, password }))(getValues());
+    const requiredData = (({ firstName, lastName, email, password }) => ({
+      first_name: firstName,
+      last_name: lastName,
+      email,
+      password,
+    }))(getValues());
     try {
-      const response = await fetch('http://localhost:5000/api/register', {
-        method: 'POST',
+      const response = await fetch("http://localhost:5000/api/auth/register", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(requiredData),
       });
       const result = await response.json();
       if (response.ok) {
-        console.log('Registration successful (required only):', result);
+        console.log("Registration successful (required only):", result);
         // Redirect or show success message
       } else {
-        console.error('Registration failed:', result.message);
+        console.error("Registration failed:", result.message);
         // Show error message
       }
     } catch (error) {
-      console.error('Error:', error);
+      console.error("Error:", error);
       // Show error message
     }
   };
